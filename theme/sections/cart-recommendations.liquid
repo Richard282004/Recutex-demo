@@ -1,0 +1,29 @@
+{%- comment -%} Fetched via /recommendations/products?section_id=cart-recommendations {%- endcomment -%}
+{%- if recommendations.performed and recommendations.products_count > 0 -%}
+  <div class="cart-recs">
+    <p class="cart-recs__title">{{ 'cart.general.recommendations' | t }}</p>
+    <ul class="cart-recs__list" role="list">
+      {%- for product in recommendations.products -%}
+        <li class="cart-recs__item">
+          <a class="cart-recs__media" href="{{ product.url }}" tabindex="-1" aria-hidden="true">
+            {%- if product.featured_media -%}
+              {{
+                product.featured_media
+                | image_url: width: 160
+                | image_tag: loading: 'lazy', widths: '80, 160', sizes: '64px', alt: ''
+              }}
+            {%- endif -%}
+          </a>
+          <div class="cart-recs__info">
+            <a href="{{ product.url }}">{{ product.title | escape }}</a>
+            {% render 'price', product: product %}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{ "name": "Recomendaciones carrito", "settings": [] }
+{% endschema %}
