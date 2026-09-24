@@ -1,0 +1,6 @@
+node_modules
+backups
+package-lock.json
+theme/config/settings_data.json
+theme/templates/*.json
+theme/sections/*.json

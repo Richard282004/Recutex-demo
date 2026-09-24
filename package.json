@@ -1,0 +1,32 @@
+{
+  "name": "recutex-storefront",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RECUTEX 2.0 — custom Shopify Online Store 2.0 theme and development environment.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "shopify theme dev --path theme --host 0.0.0.0 --port ${THEME_DEV_PORT:-9292}",
+    "login": "shopify auth login",
+    "logout": "shopify auth logout",
+    "check": "shopify theme check --path theme --fail-level error",
+    "lint:js": "eslint \"theme/assets/**/*.js\" \"scripts/**/*.mjs\"",
+    "lint:css": "stylelint \"theme/assets/**/*.css\"",
+    "lint:format": "prettier --check .",
+    "lint": "npm run check && npm run lint:js && npm run lint:css && npm run lint:format",
+    "format": "prettier --write .",
+    "theme:list": "shopify theme list",
+    "backup:live": "node scripts/backup-live.mjs",
+    "push:staging": "node scripts/push-staging.mjs"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.11.0",
+    "eslint": "^9.39.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.6.0",
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard": "^39.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+services:
+  dev:
+    build: .
+    image: recutex-storefront-dev
+    container_name: recutex-dev
+    working_dir: /app
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      THEME_DEV_PORT: ${THEME_DEV_PORT:-9292}
+    volumes:
+      # Source code: edits on the host are seen instantly by `shopify theme dev`.
+      - .:/app
+      # Keep container-built node_modules separate from the host.
+      - node_modules:/app/node_modules
+      # Persist Shopify CLI session between runs (interactive login).
+      - shopify-config:/home/node/.config
+      - shopify-cache:/home/node/.cache
+    ports:
+      - '${THEME_DEV_PORT:-9292}:${THEME_DEV_PORT:-9292}'
+    stdin_open: true
+    tty: true
+    command: npm run dev
+
+volumes:
+  node_modules:
+  shopify-config:
+  shopify-cache:
