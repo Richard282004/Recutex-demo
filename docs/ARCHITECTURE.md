@@ -1,5 +1,7 @@
 # Arquitectura y plan — RECUTEX 2.0
 
+> Contexto: la primera entrega es una **demo comercial** en una tienda de desarrollo propia con el catálogo real importado. Ver [`DEMO.md`](DEMO.md).
+
 ## Principio
 
 Shopify sigue siendo el backend comercial (catálogo, precios, inventario, descuentos, clientes, pedidos, checkout, pagos). Este repositorio solo contiene **un theme Online Store 2.0 propio** y el **entorno de desarrollo** para construirlo.
@@ -54,24 +56,24 @@ Developer ──► Docker (Node 24 + Shopify CLI + linters)
 
 ## Fases
 
-| #   | Fase                                                                | Estado                                                            |
-| --- | ------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| 0   | Auditoría técnica                                                   | ✅ `docs/AUDIT.md`                                                |
-| 1   | Docker + Shopify CLI + Git                                          | ✅ validado (build, lint, `theme dev` llega a login)              |
-| 2   | Base theme                                                          | 🟡 scaffold funcional sin JS; falta validar contra la tienda real |
-| 3   | Design System                                                       | ⏳                                                                |
-| 4   | Header + navegación (sticky, mega menú, drawer móvil)               | ⏳                                                                |
-| 5   | Home (hero, categorías, ofertas, editorial, beneficios, newsletter) | ⏳                                                                |
-| 6   | Product cards (2ª imagen, quick add, badges)                        | ⏳                                                                |
-| 7   | Colecciones (filtros Search & Discovery, bottom sheet)              | ⏳                                                                |
-| 8   | Página de producto (galería, zoom, swipe, variant picker)           | ⏳                                                                |
-| 9   | Búsqueda predictiva (`/search/suggest`)                             | ⏳                                                                |
-| 10  | Cart drawer (Ajax Cart API + Section Rendering API)                 | ⏳                                                                |
-| 11  | Motion system (IntersectionObserver, WAAPI, reduced motion)         | ⏳                                                                |
-| 12  | Responsive (360 → 1920)                                             | ⏳                                                                |
-| 13  | Performance (LCP/CLS/INP)                                           | ⏳                                                                |
-| 14  | Accesibilidad + SEO (Breadcrumb JSON-LD, auditoría WCAG)            | ⏳                                                                |
-| 15  | QA en theme staging                                                 | ⏳                                                                |
+| #   | Fase                                                                | Estado                                                  |
+| --- | ------------------------------------------------------------------- | ------------------------------------------------------- |
+| 0   | Auditoría técnica                                                   | ✅ `docs/AUDIT.md`                                      |
+| 1   | Docker + Shopify CLI + Git                                          | ✅ validado (build, lint, `theme dev` llega a login)    |
+| 2   | Base theme                                                          | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 3   | Design System                                                       | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 4   | Header + navegación (sticky, mega menú, drawer móvil)               | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 5   | Home (hero, categorías, ofertas, editorial, beneficios, newsletter) | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 6   | Product cards (2ª imagen, quick add, badges)                        | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 7   | Colecciones (filtros Search & Discovery, bottom sheet)              | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 8   | Página de producto (galería, zoom, swipe, variant picker)           | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 9   | Búsqueda predictiva (`/search/suggest`)                             | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 10  | Cart drawer (Ajax Cart API + Section Rendering API)                 | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 11  | Motion system (IntersectionObserver, WAAPI, reduced motion)         | 🟡 implementado + lint OK; falta validar en tienda demo |
+| 12  | Responsive (360 → 1920)                                             | ⏳                                                      |
+| 13  | Performance (LCP/CLS/INP)                                           | ⏳                                                      |
+| 14  | Accesibilidad + SEO (Breadcrumb JSON-LD, auditoría WCAG)            | ⏳                                                      |
+| 15  | QA en theme staging                                                 | ⏳                                                      |
 
 Cada fase se cierra solo cuando: `npm run lint` pasa, se revisa en el preview real (consola sin errores, móvil y desktop), se prueban las funciones Shopify afectadas y se hace commit en su `feature/*`.
 
