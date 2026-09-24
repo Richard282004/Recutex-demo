@@ -1,44 +1,69 @@
+{{ 'component-footer.css' | asset_url | stylesheet_tag }}
+
 <footer class="site-footer" {{ section.shopify_attributes }}>
+  {% render 'brand-bands', class: 'site-footer__bands' %}
   <div class="page-width">
-    {%- if section.blocks.size > 0 -%}
-      <div class="site-footer__blocks">
-        {%- for block in section.blocks -%}
-          <div class="site-footer__block" {{ block.shopify_attributes }}>
-            {%- if block.settings.heading != blank -%}
-              <h2 class="site-footer__heading">{{ block.settings.heading | escape }}</h2>
-            {%- endif -%}
-            {%- case block.type -%}
-              {%- when 'menu' -%}
-                <ul class="site-footer__links" role="list">
-                  {%- for link in block.settings.menu.links -%}
-                    <li>
-                      <a href="{{ link.url }}">{{ link.title | escape }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {%- when 'text' -%}
-                <div class="rte">{{ block.settings.text }}</div>
-            {%- endcase -%}
-          </div>
-        {%- endfor -%}
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="{{ routes.root_url }}">{{ shop.name }}</a>
+        {%- if section.settings.tagline != blank -%}
+          <p class="site-footer__tagline">{{ section.settings.tagline | escape }}</p>
+        {%- endif -%}
+        <ul class="site-footer__contact" role="list">
+          {%- if settings.whatsapp_number != blank -%}
+            {%- assign wa_number = settings.whatsapp_number | remove: '+' | remove: ' ' -%}
+            <li>
+              <a href="https://wa.me/{{ wa_number }}" target="_blank" rel="noopener">
+                {%- render 'icon', name: 'chat' -%}
+                WhatsApp +{{ wa_number }}
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.contact_phone != blank -%}
+            <li>
+              <a href="tel:{{ settings.contact_phone | remove: ' ' }}">{{ settings.contact_phone | escape }}</a>
+            </li>
+          {%- endif -%}
+          {%- if settings.contact_email != blank -%}
+            <li>
+              <a href="mailto:{{ settings.contact_email }}">{{ settings.contact_email | escape }}</a>
+            </li>
+          {%- endif -%}
+        </ul>
       </div>
-    {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="site-footer__blocks">
+          {%- for block in section.blocks -%}
+            <div class="site-footer__block" {{ block.shopify_attributes }}>
+              {%- if block.settings.heading != blank -%}
+                <h2 class="site-footer__heading">{{ block.settings.heading | escape }}</h2>
+              {%- endif -%}
+              {%- case block.type -%}
+                {%- when 'menu' -%}
+                  <ul class="site-footer__links" role="list">
+                    {%- for link in block.settings.menu.links -%}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title | escape }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- when 'text' -%}
+                  <div class="rte site-footer__text">{{ block.settings.text }}</div>
+              {%- endcase -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
 
     <div class="site-footer__bottom">
       <p class="site-footer__copyright">
         <small
           >&copy; {{ 'now' | date: '%Y' }}
-          {{ shop.name | link_to: routes.root_url -}}
+          {{ shop.name -}}
         </small>
       </p>
-
-      {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
-        <ul class="site-footer__payments" role="list">
-          {%- for type in shop.enabled_payment_types -%}
-            <li>{{ type | payment_type_svg_tag: class: 'payment-icon' }}</li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
 
       {%- if shop.policies.size > 0 -%}
         <ul class="site-footer__policies" role="list">
@@ -51,6 +76,14 @@
           {%- endfor -%}
         </ul>
       {%- endif -%}
+
+      {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
+        <ul class="site-footer__payments" role="list">
+          {%- for type in shop.enabled_payment_types -%}
+            <li>{{ type | payment_type_svg_tag: class: 'payment-icon' }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
     </div>
   </div>
 </footer>
@@ -60,8 +93,11 @@
   "name": "Footer",
   "class": "section-footer",
   "enabled_on": { "groups": ["footer"] },
-  "max_blocks": 6,
-  "settings": [{ "type": "checkbox", "id": "show_payment_icons", "label": "Mostrar medios de pago", "default": true }],
+  "max_blocks": 5,
+  "settings": [
+    { "type": "text", "id": "tagline", "label": "Frase de marca" },
+    { "type": "checkbox", "id": "show_payment_icons", "label": "Mostrar medios de pago", "default": true }
+  ],
   "blocks": [
     {
       "type": "menu",
