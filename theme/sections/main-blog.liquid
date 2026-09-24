@@ -1,7 +1,9 @@
+{{ 'section-pages.css' | asset_url | stylesheet_tag }}
+
 {%- paginate blog.articles by 12 -%}
   <section class="section blog">
     <div class="page-width">
-      <h1 class="section__title">{{ blog.title | escape }}</h1>
+      <h1 class="page-title">{{ blog.title | escape }}</h1>
       <ul class="article-grid" role="list">
         {%- for article in blog.articles -%}
           <li class="article-card">

@@ -1,7 +1,9 @@
+{{ 'section-pages.css' | asset_url | stylesheet_tag }}
+
 <article class="section article">
   <div class="page-width page-width--narrow">
     <header>
-      <h1 class="section__title">{{ article.title | escape }}</h1>
+      <h1 class="page-title">{{ article.title | escape }}</h1>
       <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">
         {{- article.published_at | date: format: 'date' -}}
       </time>

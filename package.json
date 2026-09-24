@@ -19,7 +19,9 @@
     "format": "prettier --write .",
     "theme:list": "shopify theme list",
     "backup:live": "node scripts/backup-live.mjs",
-    "push:staging": "node scripts/push-staging.mjs"
+    "push:staging": "node scripts/push-staging.mjs",
+    "demo:catalog": "node scripts/demo/build-catalog.mjs",
+    "demo:seed": "node scripts/demo/seed-store.mjs"
   },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.11.0",

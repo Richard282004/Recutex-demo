@@ -1,10 +1,13 @@
+{{ 'section-pages.css' | asset_url | stylesheet_tag }}
+{{ 'section-home.css' | asset_url | stylesheet_tag }}
+
 {%- comment -%}
   Base search page (Phase 2). Predictive search overlay arrives in Phase 9.
 {%- endcomment -%}
 {%- paginate search.results by 24 -%}
   <section class="section search">
     <div class="page-width">
-      <h1 class="section__title">{{ 'search.title' | t }}</h1>
+      <h1 class="page-title">{{ 'search.title' | t }}</h1>
 
       <form action="{{ routes.search_url }}" method="get" role="search" class="search-form">
         <label class="visually-hidden" for="SearchInput">{{ 'general.search.search' | t }}</label>
