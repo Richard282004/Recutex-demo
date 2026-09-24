@@ -1,0 +1,49 @@
+{%- layout none -%}
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex">
+    {%- assign gift_value = gift_card.initial_value | money -%}
+    <title>{{ 'gift_cards.issued.title' | t: value: gift_value, shop: shop.name | strip_html }}</title>
+    {%- render 'css-variables' -%}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ content_for_header }}
+  </head>
+  <body>
+    <main class="section page-width page-width--narrow text-center">
+      <h1 class="section__title">
+        {{- 'gift_cards.issued.title' | t: value: gift_value, shop: shop.name -}}
+      </h1>
+      {%- if gift_card.image -%}
+        {{ gift_card | image_url: width: 570 | image_tag: alt: '' }}
+      {%- endif -%}
+      <p class="price__current">{{ gift_card.balance | money }}</p>
+      {%- if gift_card.expired -%}
+        <p>{{ 'gift_cards.issued.expired' | t }}</p>
+      {%- elsif gift_card.enabled == false -%}
+        <p>{{ 'gift_cards.issued.disabled' | t }}</p>
+      {%- elsif gift_card.expires_on -%}
+        {%- assign expires_on = gift_card.expires_on | date: format: 'date' -%}
+        <p>{{ 'gift_cards.issued.expires_on' | t: expires_on: expires_on }}</p>
+      {%- endif -%}
+      <p>
+        {{ 'gift_cards.issued.code' | t }}: <strong>{{ gift_card.code | format_code }}</strong>
+      </p>
+      {%- if gift_card.pass_url -%}
+        <a href="{{ gift_card.pass_url }}"
+          ><img
+            src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
+            width="120"
+            height="40"
+            alt="Apple Wallet"
+            loading="lazy"
+        ></a>
+      {%- endif -%}
+      <p>
+        <a class="button" href="{{ shop.url }}">{{ 'general.continue_shopping' | t }}</a>
+      </p>
+    </main>
+  </body>
+</html>

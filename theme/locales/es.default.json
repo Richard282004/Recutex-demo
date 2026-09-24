@@ -1,0 +1,106 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Saltar al contenido",
+      "close": "Cerrar",
+      "menu": "Menú"
+    },
+    "pagination": {
+      "label": "Paginación",
+      "previous": "Página anterior",
+      "next": "Página siguiente",
+      "page": "Página {{ number }}"
+    },
+    "search": {
+      "search": "Buscar",
+      "placeholder": "Buscar en Recutex…"
+    },
+    "header": {
+      "account": "Mi cuenta",
+      "cart": "Carrito",
+      "cart_count": {
+        "one": "{{ count }} producto",
+        "other": "{{ count }} productos"
+      }
+    },
+    "404": {
+      "title": "Página no encontrada",
+      "subtext": "La página que buscas no existe o fue movida.",
+      "link": "Seguir comprando"
+    },
+    "continue_shopping": "Seguir comprando",
+    "social": {
+      "share": "Compartir"
+    },
+    "password": {
+      "title": "Tienda en mantenimiento",
+      "enter_using_password": "Entrar con contraseña",
+      "password": "Contraseña",
+      "submit": "Entrar"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Agregar al carrito",
+      "sold_out": "Agotado",
+      "unavailable": "No disponible",
+      "on_sale": "Oferta",
+      "quantity": "Cantidad",
+      "regular_price": "Precio normal",
+      "sale_price": "Precio oferta",
+      "from_price": "Desde {{ price }}",
+      "variant": "Opción",
+      "view_details": "Ver detalle",
+      "thumbnail": "Ver imagen {{ number }}"
+    }
+  },
+  "collections": {
+    "general": {
+      "empty": "No hay productos en esta colección.",
+      "sort_by": "Ordenar por",
+      "apply": "Aplicar",
+      "products_count": {
+        "one": "{{ count }} producto",
+        "other": "{{ count }} productos"
+      }
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Tu carrito",
+      "empty": "Tu carrito está vacío.",
+      "subtotal": "Subtotal",
+      "taxes_and_shipping": "Impuestos incluidos. Envío calculado al finalizar la compra.",
+      "checkout": "Finalizar compra",
+      "update": "Actualizar",
+      "remove": "Eliminar {{ title }}",
+      "note": "Nota del pedido",
+      "product": "Producto",
+      "total": "Total"
+    }
+  },
+  "search": {
+    "title": "Resultados de búsqueda",
+    "results_for": {
+      "one": "{{ count }} resultado para “{{ terms }}”",
+      "other": "{{ count }} resultados para “{{ terms }}”"
+    },
+    "no_results": "No encontramos resultados para “{{ terms }}”."
+  },
+  "blogs": {
+    "article": {
+      "read_more": "Leer más",
+      "back_to_blog": "Volver al blog"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Tu tarjeta de regalo de {{ value }} para {{ shop }}",
+      "code": "Código",
+      "expired": "Expirada",
+      "disabled": "Deshabilitada",
+      "expires_on": "Vence el {{ expires_on }}",
+      "print": "Imprimir"
+    }
+  }
+}

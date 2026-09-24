@@ -1,0 +1,39 @@
+<article class="section article">
+  <div class="page-width page-width--narrow">
+    <header>
+      <h1 class="section__title">{{ article.title | escape }}</h1>
+      <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">
+        {{- article.published_at | date: format: 'date' -}}
+      </time>
+    </header>
+    {%- if article.image -%}
+      <figure class="article__image">
+        {{
+          article.image
+          | image_url: width: 1600
+          | image_tag:
+            loading: 'eager',
+            fetchpriority: 'high',
+            widths: '600, 900, 1200, 1600',
+            sizes: '(min-width: 990px) 800px, 100vw',
+            alt: article.image.alt
+        }}
+      </figure>
+    {%- endif -%}
+    <div class="rte">{{ article.content }}</div>
+    <p>
+      <a class="link" href="{{ blog.url }}">{{ 'blogs.article.back_to_blog' | t }}</a>
+    </p>
+  </div>
+</article>
+
+<script type="application/ld+json">
+  {{ article | structured_data }}
+</script>
+
+{% schema %}
+{
+  "name": "Artículo",
+  "settings": []
+}
+{% endschema %}

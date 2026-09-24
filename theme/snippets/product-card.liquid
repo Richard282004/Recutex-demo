@@ -1,0 +1,44 @@
+{%- comment -%}
+  Base product card. Data comes from Shopify only (no hardcoded products/prices).
+  Accepts:
+  - product: {Object} (required)
+  - lazy: {Boolean} lazy-load the image (default true; pass false for above-the-fold cards)
+  - sizes: {String} sizes attribute for the image
+{%- endcomment -%}
+{%- liquid
+  assign loading = 'lazy'
+  if lazy == false
+    assign loading = 'eager'
+  endif
+  assign img_sizes = sizes | default: '(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw'
+-%}
+
+<article class="product-card">
+  <a class="product-card__link" href="{{ product.url }}">
+    <div class="product-card__media">
+      {%- if product.featured_media -%}
+        {{
+          product.featured_media
+          | image_url: width: 1200
+          | image_tag:
+            loading: loading,
+            widths: '240, 360, 480, 640, 800, 1000, 1200',
+            sizes: img_sizes,
+            alt: product.featured_media.alt,
+            class: 'product-card__image'
+        }}
+      {%- else -%}
+        {{ 'product-1' | placeholder_svg_tag: 'product-card__image placeholder' }}
+      {%- endif -%}
+
+      {%- unless product.available -%}
+        <span class="badge badge--muted">{{ 'products.product.sold_out' | t }}</span>
+      {%- endunless -%}
+    </div>
+
+    <div class="product-card__info">
+      <h3 class="product-card__title">{{ product.title | escape }}</h3>
+      {%- render 'price', product: product -%}
+    </div>
+  </a>
+</article>

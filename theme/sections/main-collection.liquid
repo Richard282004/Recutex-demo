@@ -1,0 +1,76 @@
+{%- comment -%}
+  Base collection page (Phase 2). Storefront filters, drawers and bottom sheets arrive in Phase 7.
+{%- endcomment -%}
+{%- paginate collection.products by section.settings.products_per_page -%}
+  <section class="section collection">
+    <div class="page-width">
+      <header class="collection__header">
+        <h1 class="collection__title">{{ collection.title | escape }}</h1>
+        {%- if collection.description != blank -%}
+          <div class="collection__description rte">{{ collection.description }}</div>
+        {%- endif -%}
+      </header>
+
+      <div class="collection__toolbar">
+        <p class="collection__count">
+          {{- 'collections.general.products_count' | t: count: collection.products_count -}}
+        </p>
+        <form class="collection__sort" method="get">
+          <label class="field__label" for="SortBy">{{ 'collections.general.sort_by' | t }}</label>
+          {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+          <select class="field__input" id="SortBy" name="sort_by" data-autosubmit>
+            {%- for option in collection.sort_options -%}
+              <option
+                value="{{ option.value | escape }}"
+                {% if option.value == sort_by %}
+                  selected
+                {% endif %}
+              >
+                {{- option.name | escape -}}
+              </option>
+            {%- endfor -%}
+          </select>
+          <noscript
+            ><button class="button" type="submit">{{ 'collections.general.apply' | t }}</button></noscript
+          >
+        </form>
+      </div>
+
+      {%- if collection.products.size > 0 -%}
+        <ul class="product-grid" role="list">
+          {%- for product in collection.products -%}
+            {%- liquid
+              assign lazy = true
+              if forloop.index <= 4
+                assign lazy = false
+              endif
+            -%}
+            <li>{% render 'product-card', product: product, lazy: lazy %}</li>
+          {%- endfor -%}
+        </ul>
+      {%- else -%}
+        <p class="empty-state">{{ 'collections.general.empty' | t }}</p>
+      {%- endif -%}
+
+      {% render 'pagination', paginate: paginate %}
+    </div>
+  </section>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "Colección",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "label": "Productos por página",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "default": 24
+    }
+  ]
+}
+{% endschema %}

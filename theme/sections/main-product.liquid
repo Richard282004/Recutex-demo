@@ -1,0 +1,128 @@
+{%- comment -%}
+  Base product page (Phase 2). Gallery/zoom/swipe, variant picker and cart drawer arrive in Phases 8–10.
+  Works without JavaScript: the <select name="id"> posts the chosen variant to /cart/add.
+{%- endcomment -%}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+
+<section class="section product" aria-label="{{ product.title | escape }}">
+  <div class="page-width product__grid">
+    <div class="product__media">
+      {%- for media in product.media -%}
+        {%- if media.media_type == 'image' -%}
+          <figure class="product__media-item">
+            {%- liquid
+              assign loading = 'lazy'
+              assign priority = 'auto'
+              if forloop.first
+                assign loading = 'eager'
+                assign priority = 'high'
+              endif
+            -%}
+            {{
+              media
+              | image_url: width: 1600
+              | image_tag:
+                loading: loading,
+                fetchpriority: priority,
+                widths: '400, 600, 800, 1000, 1200, 1600',
+                sizes: '(min-width: 990px) 55vw, 100vw',
+                alt: media.alt
+            }}
+          </figure>
+        {%- else -%}
+          <figure class="product__media-item">{{ media | media_tag: image_size: '1200x' }}</figure>
+        {%- endif -%}
+      {%- else -%}
+        {{ 'product-1' | placeholder_svg_tag: 'placeholder' }}
+      {%- endfor -%}
+    </div>
+
+    <div class="product__info">
+      {%- if product.vendor != blank and section.settings.show_vendor -%}
+        <p class="product__vendor">{{ product.vendor | escape }}</p>
+      {%- endif -%}
+      <h1 class="product__title">{{ product.title | escape }}</h1>
+
+      {%- render 'price', product: product, use_variant: true -%}
+
+      {%- form 'product', product, class: 'product-form', novalidate: 'novalidate' -%}
+        {%- unless product.has_only_default_variant -%}
+          <div class="field">
+            <label class="field__label" for="Variant-{{ section.id }}">
+              {{- product.options | join: ' / ' -}}
+            </label>
+            <select class="field__input" id="Variant-{{ section.id }}" name="id">
+              {%- for variant in product.variants -%}
+                <option
+                  value="{{ variant.id }}"
+                  {% if variant == current_variant %}
+                    selected
+                  {% endif %}
+                  {% unless variant.available %}
+                    disabled
+                  {% endunless %}
+                >
+                  {{ variant.title | escape }} – {{ variant.price | money }}
+                  {%- unless variant.available %} ({{ 'products.product.sold_out' | t }}){% endunless -%}
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        {%- else -%}
+          <input type="hidden" name="id" value="{{ current_variant.id }}">
+        {%- endunless -%}
+
+        <div class="field field--quantity">
+          <label class="field__label" for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
+          <input
+            class="field__input"
+            id="Quantity-{{ section.id }}"
+            type="number"
+            name="quantity"
+            value="1"
+            min="1"
+            inputmode="numeric"
+          >
+        </div>
+
+        <button
+          class="button button--primary button--full"
+          type="submit"
+          name="add"
+          {% unless current_variant.available %}
+            disabled
+          {% endunless %}
+        >
+          {%- if current_variant.available -%}
+            {{ 'products.product.add_to_cart' | t }}
+          {%- else -%}
+            {{ 'products.product.sold_out' | t }}
+          {%- endif -%}
+        </button>
+
+        {%- if section.settings.show_dynamic_checkout -%}
+          {{ form | payment_button }}
+        {%- endif -%}
+      {%- endform -%}
+
+      {%- if product.description != blank -%}
+        <div class="product__description rte">{{ product.description }}</div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+  {{ product | structured_data }}
+</script>
+
+{% schema %}
+{
+  "name": "Producto",
+  "tag": "div",
+  "settings": [
+    { "type": "checkbox", "id": "show_vendor", "label": "Mostrar marca", "default": false },
+    { "type": "checkbox", "id": "show_dynamic_checkout", "label": "Mostrar botón de compra rápida", "default": true }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,131 @@
+{%- comment -%}
+  Base header (Phase 2). Mega menu, search overlay and sticky behaviour arrive in Phase 4.
+  Navigation comes from the menu selected in the Theme Editor.
+{%- endcomment -%}
+<header class="site-header" {{ section.shopify_attributes }}>
+  <div class="page-width site-header__inner">
+    <details class="site-header__mobile-nav">
+      <summary class="icon-button" aria-label="{{ 'general.accessibility.menu' | t }}">
+        <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+      </summary>
+      <nav class="mobile-nav" aria-label="{{ 'general.accessibility.menu' | t }}">
+        <ul role="list">
+          {%- for link in section.settings.menu.links -%}
+            <li>
+              <a
+                href="{{ link.url }}"
+                {% if link.current %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {{- link.title | escape -}}
+              </a>
+              {%- if link.links.size > 0 -%}
+                <ul role="list">
+                  {%- for child in link.links -%}
+                    <li>
+                      <a
+                        href="{{ child.url }}"
+                        {% if child.current %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{- child.title | escape -}}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </details>
+
+    {%- liquid
+      assign logo_tag = 'div'
+      if request.page_type == 'index'
+        assign logo_tag = 'h1'
+      endif
+    -%}
+    <{{ logo_tag }} class="site-header__logo">
+      <a href="{{ routes.root_url }}">
+        {%- if settings.logo != blank -%}
+          {%- assign logo_sizes = settings.logo_width | append: 'px' -%}
+          {{
+            settings.logo
+            | image_url: width: 520
+            | image_tag:
+              loading: 'eager',
+              widths: '130, 260, 390, 520',
+              sizes: logo_sizes,
+              alt: shop.name,
+              class: 'site-header__logo-image'
+          }}
+        {%- else -%}
+          <span class="site-header__logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+    </{{ logo_tag }}>
+
+    <nav class="site-nav" aria-label="{{ 'general.accessibility.menu' | t }}">
+      <ul class="site-nav__list" role="list">
+        {%- for link in section.settings.menu.links -%}
+          <li>
+            <a
+              class="site-nav__link"
+              href="{{ link.url }}"
+              {% if link.current %}
+                aria-current="page"
+              {% endif %}
+            >
+              {{- link.title | escape -}}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="icon-button" href="{{ routes.search_url }}" aria-label="{{ 'general.search.search' | t }}">
+        <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </a>
+      {%- if shop.customer_accounts_enabled -%}
+        <a
+          class="icon-button site-header__account"
+          href="{{ routes.account_url }}"
+          aria-label="{{ 'general.header.account' | t }}"
+        >
+          <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+        </a>
+      {%- endif -%}
+      <a
+        class="icon-button"
+        href="{{ routes.cart_url }}"
+        aria-label="{{ 'general.header.cart' | t }}, {{ 'general.header.cart_count' | t: count: cart.item_count }}"
+      >
+        <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24">
+          <path d="M5 7h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 7Z M9 7V6a3 3 0 0 1 6 0v1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+        {%- if cart.item_count > 0 -%}
+          <span class="cart-count" aria-hidden="true">{{ cart.item_count }}</span>
+        {%- endif -%}
+      </a>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "section-header",
+  "enabled_on": { "groups": ["header"] },
+  "settings": [{ "type": "link_list", "id": "menu", "label": "Menú principal", "default": "main-menu" }]
+}
+{% endschema %}
