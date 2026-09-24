@@ -1,60 +1,241 @@
 {%- comment -%}
-  Base collection page (Phase 2). Storefront filters, drawers and bottom sheets arrive in Phase 7.
+  Collection page with Shopify storefront filtering (collection.filters, configured in the
+  Search & Discovery app) and sorting. Desktop: sidebar. Mobile: bottom sheet + native sort select.
+  Without JS the form submits normally; with JS results update in place (collection.js).
 {%- endcomment -%}
+{{ 'section-collection.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'collection.js' | asset_url }}" type="module"></script>
+
+{%- liquid
+  assign sort_by = collection.sort_by | default: collection.default_sort_by
+  assign active_count = 0
+  for filter in collection.filters
+    assign active_count = active_count | plus: filter.active_values.size
+    if filter.type == 'price_range'
+      if filter.min_value.value != null or filter.max_value.value != null
+        assign active_count = active_count | plus: 1
+      endif
+    endif
+  endfor
+-%}
+
 {%- paginate collection.products by section.settings.products_per_page -%}
-  <section class="section collection">
+  <collection-filters class="section collection" data-section-id="{{ section.id }}">
     <div class="page-width">
       <header class="collection__header">
+        {% render 'breadcrumbs' %}
         <h1 class="collection__title">{{ collection.title | escape }}</h1>
-        {%- if collection.description != blank -%}
+        {%- if collection.description != blank and section.settings.show_description -%}
           <div class="collection__description rte">{{ collection.description }}</div>
         {%- endif -%}
       </header>
 
-      <div class="collection__toolbar">
-        <p class="collection__count">
-          {{- 'collections.general.products_count' | t: count: collection.products_count -}}
-        </p>
-        <form class="collection__sort" method="get">
-          <label class="field__label" for="SortBy">{{ 'collections.general.sort_by' | t }}</label>
-          {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-          <select class="field__input" id="SortBy" name="sort_by" data-autosubmit>
-            {%- for option in collection.sort_options -%}
-              <option
-                value="{{ option.value | escape }}"
-                {% if option.value == sort_by %}
-                  selected
-                {% endif %}
-              >
-                {{- option.name | escape -}}
-              </option>
-            {%- endfor -%}
-          </select>
-          <noscript
-            ><button class="button" type="submit">{{ 'collections.general.apply' | t }}</button></noscript
-          >
-        </form>
-      </div>
+      <form class="collection__layout" id="FacetsForm-{{ section.id }}" data-facets-form>
+        {%- if collection.terms != blank -%}
+          <input type="hidden" name="q" value="{{ collection.terms | escape }}">
+        {%- endif -%}
 
-      {%- if collection.products.size > 0 -%}
-        <ul class="product-grid" role="list">
-          {%- for product in collection.products -%}
-            {%- liquid
-              assign lazy = true
-              if forloop.index <= 4
-                assign lazy = false
-              endif
-            -%}
-            <li>{% render 'product-card', product: product, lazy: lazy %}</li>
-          {%- endfor -%}
-        </ul>
-      {%- else -%}
-        <p class="empty-state">{{ 'collections.general.empty' | t }}</p>
-      {%- endif -%}
+        <div class="collection__toolbar">
+          {%- if collection.filters.size > 0 -%}
+            <button
+              class="button button--small collection__filter-toggle"
+              type="button"
+              data-drawer-open="Facets-{{ section.id }}"
+              aria-controls="Facets-{{ section.id }}"
+              aria-expanded="false"
+            >
+              {% render 'icon', name: 'filter' %}
+              {{ 'collections.general.filter' | t }}
+              {%- if active_count > 0 %} ({{ active_count }}){% endif -%}
+            </button>
+          {%- endif -%}
 
-      {% render 'pagination', paginate: paginate %}
+          <p class="collection__count" data-results-count>
+            {{- 'collections.general.products_count' | t: count: collection.products_count -}}
+          </p>
+
+          <div class="collection__sort">
+            <label class="collection__sort-label" for="SortBy-{{ section.id }}">
+              {{- 'collections.general.sort_by' | t -}}
+            </label>
+            <select class="field__input" id="SortBy-{{ section.id }}" name="sort_by">
+              {%- for option in collection.sort_options -%}
+                <option
+                  value="{{ option.value | escape }}"
+                  {% if option.value == sort_by %}
+                    selected
+                  {% endif %}
+                >
+                  {{- option.name | escape -}}
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        </div>
+
+        {%- if collection.filters.size > 0 -%}
+          <drawer-panel class="drawer drawer--bottom facets" id="Facets-{{ section.id }}" aria-hidden="true">
+            <div class="drawer__overlay" data-drawer-close></div>
+            <div
+              class="drawer__panel facets__panel"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="FacetsTitle-{{ section.id }}"
+              tabindex="-1"
+            >
+              <div class="drawer__header facets__header">
+                <h2 class="drawer__title" id="FacetsTitle-{{ section.id }}">{{ 'collections.general.filter' | t }}</h2>
+                <button class="icon-button" type="button" data-drawer-close>
+                  {% render 'icon', name: 'close' %}
+                  <span class="visually-hidden">{{ 'general.accessibility.close' | t }}</span>
+                </button>
+              </div>
+
+              <div class="drawer__body facets__body" data-facets>
+                {%- for filter in collection.filters -%}
+                  <details class="accordion facet" open>
+                    <summary>
+                      {{ filter.label | escape }}
+                      {%- if filter.active_values.size > 0 %} ({{ filter.active_values.size }}){% endif -%}
+                    </summary>
+                    <div class="accordion__content">
+                      {%- case filter.type -%}
+                        {%- when 'list', 'boolean' -%}
+                          <ul class="facet__list" role="list">
+                            {%- for value in filter.values -%}
+                              <li>
+                                <label class="facet__option{% if value.count == 0 and value.active == false %} is-disabled{% endif %}">
+                                  <input
+                                    type="checkbox"
+                                    name="{{ value.param_name }}"
+                                    value="{{ value.value }}"
+                                    {% if value.active %}
+                                      checked
+                                    {% endif %}
+                                    {% if value.count == 0 and value.active == false %}
+                                      disabled
+                                    {% endif %}
+                                  >
+                                  <span>{{ value.label | escape }}</span>
+                                  <span class="facet__count">{{ value.count }}</span>
+                                </label>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- when 'price_range' -%}
+                          {%- liquid
+                            assign currency = cart.currency.symbol
+                            assign max_price = filter.range_max | money_without_currency | remove: '.' | remove: ','
+                          -%}
+                          <div class="facet__price">
+                            <label class="field">
+                              <span class="field__label">{{ 'collections.general.from' | t }}</span>
+                              <input
+                                class="field__input"
+                                type="number"
+                                name="{{ filter.min_value.param_name }}"
+                                {% if filter.min_value.value %}
+                                  value="{{ filter.min_value.value | money_without_currency | remove: '.' | remove: ',' }}"
+                                {% endif %}
+                                placeholder="{{ currency }}0"
+                                min="0"
+                                max="{{ max_price }}"
+                                inputmode="numeric"
+                              >
+                            </label>
+                            <label class="field">
+                              <span class="field__label">{{ 'collections.general.to' | t }}</span>
+                              <input
+                                class="field__input"
+                                type="number"
+                                name="{{ filter.max_value.param_name }}"
+                                {% if filter.max_value.value %}
+                                  value="{{ filter.max_value.value | money_without_currency | remove: '.' | remove: ',' }}"
+                                {% endif %}
+                                placeholder="{{ currency }}{{ max_price }}"
+                                min="0"
+                                max="{{ max_price }}"
+                                inputmode="numeric"
+                              >
+                            </label>
+                          </div>
+                      {%- endcase -%}
+                    </div>
+                  </details>
+                {%- endfor -%}
+              </div>
+
+              <div class="drawer__footer facets__footer">
+                <a class="button button--small" href="{{ collection.url }}?sort_by={{ sort_by }}" data-facet-link>
+                  {{- 'collections.general.clear_all' | t -}}
+                </a>
+                <button class="button button--primary button--small facets__apply" type="submit" data-drawer-close>
+                  {{- 'collections.general.show_results' | t -}}
+                </button>
+              </div>
+            </div>
+          </drawer-panel>
+        {%- endif -%}
+
+        <div class="collection__results" data-results>
+          {%- if active_count > 0 -%}
+            <ul class="active-filters" role="list">
+              {%- for filter in collection.filters -%}
+                {%- for value in filter.active_values -%}
+                  <li>
+                    <a class="chip chip--active" href="{{ value.url_to_remove }}" data-facet-link>
+                      {{ value.label | escape }}
+                      {% render 'icon', name: 'close' %}
+                      <span class="visually-hidden">{{ 'collections.general.remove_filter' | t }}</span>
+                    </a>
+                  </li>
+                {%- endfor -%}
+                {%- if filter.type == 'price_range' -%}
+                  {%- if filter.min_value.value != null or filter.max_value.value != null -%}
+                    <li>
+                      <a class="chip chip--active" href="{{ filter.url_to_remove }}" data-facet-link>
+                        {{ filter.min_value.value | default: 0 | money }} –
+                        {{ filter.max_value.value | default: filter.range_max | money }}
+                        {% render 'icon', name: 'close' %}
+                        <span class="visually-hidden">{{ 'collections.general.remove_filter' | t }}</span>
+                      </a>
+                    </li>
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+
+          {%- if collection.products.size > 0 -%}
+            <ul class="product-grid" role="list">
+              {%- for product in collection.products -%}
+                {%- liquid
+                  assign lazy = true
+                  if forloop.index <= 4
+                    assign lazy = false
+                  endif
+                -%}
+                <li>{% render 'product-card', product: product, lazy: lazy %}</li>
+              {%- endfor -%}
+            </ul>
+          {%- else -%}
+            <div class="empty-state collection__empty">
+              <p>{{ 'collections.general.no_matches' | t }}</p>
+              <a class="button" href="{{ collection.url }}" data-facet-link>
+                {{- 'collections.general.clear_all' | t -}}
+              </a>
+            </div>
+          {%- endif -%}
+
+          {% render 'pagination', paginate: paginate %}
+        </div>
+
+        <noscript>
+          <button class="button" type="submit">{{ 'collections.general.apply' | t }}</button>
+        </noscript>
+      </form>
     </div>
-  </section>
+  </collection-filters>
 {%- endpaginate -%}
 
 {% schema %}
@@ -70,7 +251,8 @@
       "max": 48,
       "step": 4,
       "default": 24
-    }
+    },
+    { "type": "checkbox", "id": "show_description", "label": "Mostrar descripción", "default": true }
   ]
 }
 {% endschema %}
