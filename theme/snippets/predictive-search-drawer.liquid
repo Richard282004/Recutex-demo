@@ -1,0 +1,66 @@
+{%- comment -%}
+  Search overlay. Uses Shopify's native Predictive Search API (/search/suggest) rendered through
+  the `predictive-search` section, so results are real products, collections and pages.
+  Accepts:
+  - popular: {String} comma-separated popular searches (from header settings)
+{%- endcomment -%}
+<drawer-panel class="drawer drawer--top" id="SearchDrawer" aria-hidden="true">
+  <div class="drawer__overlay" data-drawer-close></div>
+  <div
+    class="drawer__panel search-drawer"
+    role="dialog"
+    aria-modal="true"
+    aria-label="{{ 'general.search.search' | t }}"
+    tabindex="-1"
+  >
+    <predictive-search class="page-width search-drawer__inner" data-section-id="predictive-search">
+      <form action="{{ routes.search_url }}" method="get" role="search" class="search-drawer__form">
+        {% render 'icon', name: 'search' %}
+        <label class="visually-hidden" for="PredictiveSearchInput">{{ 'general.search.search' | t }}</label>
+        <input
+          class="search-drawer__input"
+          id="PredictiveSearchInput"
+          type="search"
+          name="q"
+          placeholder="{{ 'general.search.placeholder' | t }}"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+          role="combobox"
+          aria-expanded="false"
+          aria-controls="PredictiveSearchResults"
+          aria-autocomplete="list"
+        >
+        <input type="hidden" name="options[prefix]" value="last">
+        <button class="icon-button" type="button" data-drawer-close>
+          {% render 'icon', name: 'close' %}
+          <span class="visually-hidden">{{ 'general.accessibility.close' | t }}</span>
+        </button>
+      </form>
+
+      {%- assign popular_terms = popular | split: ',' -%}
+      {%- if popular_terms.size > 0 -%}
+        <div class="search-drawer__popular" data-search-idle>
+          <p class="search-drawer__label">{{ 'general.search.popular' | t }}</p>
+          <ul class="chip-list" role="list">
+            {%- for term in popular_terms -%}
+              {%- assign term_clean = term | strip -%}
+              {%- if term_clean != blank -%}
+                <li>
+                  <a
+                    class="chip"
+                    href="{{ routes.search_url }}?q={{ term_clean | url_encode }}&options%5Bprefix%5D=last"
+                  >
+                    {{- term_clean | escape -}}
+                  </a>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+
+      <div id="PredictiveSearchResults" class="search-drawer__results" aria-live="polite"></div>
+    </predictive-search>
+  </div>
+</drawer-panel>
