@@ -1,0 +1,46 @@
+{%- comment -%}
+  Visual breadcrumbs + BreadcrumbList structured data. Used on collection and product pages.
+{%- endcomment -%}
+{%- liquid
+  assign home_label = 'general.breadcrumbs.home' | t
+  assign parent = null
+  if request.page_type == 'product' and collection
+    assign parent = collection
+  endif
+-%}
+<nav class="breadcrumbs" aria-label="{{ 'general.breadcrumbs.label' | t }}">
+  <ol>
+    <li>
+      <a href="{{ routes.root_url }}">{{ home_label }}</a>
+    </li>
+    {%- if parent -%}
+      <li>
+        <a href="{{ parent.url }}">{{ parent.title | escape }}</a>
+      </li>
+    {%- endif -%}
+    {%- case request.page_type -%}
+      {%- when 'product' -%}
+        <li aria-current="page">{{ product.title | escape }}</li>
+      {%- when 'collection' -%}
+        <li aria-current="page">{{ collection.title | escape }}</li>
+    {%- endcase -%}
+  </ol>
+</nav>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": {{ home_label | json }}, "item": {{ request.origin | append: routes.root_url | json }} }
+      {%- if parent -%}
+        , { "@type": "ListItem", "position": 2, "name": {{ parent.title | json }}, "item": {{ request.origin | append: parent.url | json }} }
+      {%- endif -%}
+      {%- if request.page_type == 'product' -%}
+        , { "@type": "ListItem", "position": {% if parent %}3{% else %}2{% endif %}, "name": {{ product.title | json }}, "item": {{ request.origin | append: product.url | json }} }
+      {%- elsif request.page_type == 'collection' -%}
+        , { "@type": "ListItem", "position": 2, "name": {{ collection.title | json }}, "item": {{ request.origin | append: collection.url | json }} }
+      {%- endif -%}
+    ]
+  }
+</script>
