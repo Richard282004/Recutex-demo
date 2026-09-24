@@ -8,9 +8,22 @@
 -%}
 
 {{ body_font | font_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: true }}
+{%- if settings.type_heading_brand -%}
+  {{ 'bricolage-grotesque-latin.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: true }}
+{%- endif -%}
 
 {% style %}
-  {{ heading_font | font_face: font_display: 'swap' }}
+  {%- if settings.type_heading_brand -%}
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      src: url('{{ 'bricolage-grotesque-latin.woff2' | asset_url }}') format('woff2');
+      font-weight: 400 800;
+      font-style: normal;
+      font-display: swap;
+    }
+  {%- else -%}
+    {{ heading_font | font_face: font_display: 'swap' }}
+  {%- endif -%}
   {{ body_font | font_face: font_display: 'swap' }}
   {{ body_font_bold | font_face: font_display: 'swap' }}
 
@@ -22,11 +35,16 @@
     --color-text: {{ settings.color_text }};
     --color-muted: {{ settings.color_muted }};
     --color-sale: {{ settings.color_sale }};
-    --color-primary-rgb: {{ settings.color_primary.red }}, {{ settings.color_primary.green }}, {{ settings.color_primary.blue }};
-    --color-text-rgb: {{ settings.color_text.red }}, {{ settings.color_text.green }}, {{ settings.color_text.blue }};
+    --color-primary-rgb: {{ settings.color_primary.red }} {{ settings.color_primary.green }} {{ settings.color_primary.blue }};
+    --color-text-rgb: {{ settings.color_text.red }} {{ settings.color_text.green }} {{ settings.color_text.blue }};
 
-    --font-heading: {{ heading_font.family }}, {{ heading_font.fallback_families }};
-    --font-heading-weight: {{ heading_font.weight }};
+    {%- if settings.type_heading_brand %}
+      --font-heading: 'Bricolage Grotesque', {{ body_font.family }}, {{ body_font.fallback_families }};
+      --font-heading-weight: 650;
+    {%- else %}
+      --font-heading: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+      --font-heading-weight: {{ heading_font.weight }};
+    {%- endif %}
     --font-body: {{ body_font.family }}, {{ body_font.fallback_families }};
     --font-body-weight: {{ body_font.weight }};
     --font-body-weight-bold: {{ body_font_bold.weight | default: 700 }};

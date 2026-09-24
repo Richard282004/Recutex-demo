@@ -1,5 +1,10 @@
 {
-  "current": "Default",
+  "current": {
+    "whatsapp_number": "56982933117",
+    "contact_phone": "+56 2 3278 1476",
+    "contact_email": "recutex@recutex.cl",
+    "cart_type": "drawer"
+  },
   "presets": {
     "Default": {}
   }

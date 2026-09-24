@@ -3,7 +3,8 @@
     "accessibility": {
       "skip_to_content": "Saltar al contenido",
       "close": "Cerrar",
-      "menu": "Menú"
+      "menu": "Menú",
+      "main_navigation": "Navegación principal"
     },
     "pagination": {
       "label": "Paginación",
@@ -13,7 +14,13 @@
     },
     "search": {
       "search": "Buscar",
-      "placeholder": "Buscar en Recutex…"
+      "placeholder": "Buscar en Recutex…",
+      "collections": "Categorías",
+      "pages": "Páginas",
+      "popular": "Búsquedas populares",
+      "products": "Productos",
+      "suggestions": "Sugerencias",
+      "view_all": "Ver todos los resultados para “{{ terms }}”"
     },
     "header": {
       "account": "Mi cuenta",
@@ -21,7 +28,8 @@
       "cart_count": {
         "one": "{{ count }} producto",
         "other": "{{ count }} productos"
-      }
+      },
+      "view_all": "Ver todo {{ title }}"
     },
     "404": {
       "title": "Página no encontrada",
@@ -37,6 +45,17 @@
       "enter_using_password": "Entrar con contraseña",
       "password": "Contraseña",
       "submit": "Entrar"
+    },
+    "breadcrumbs": {
+      "home": "Inicio",
+      "label": "Ruta de navegación"
+    },
+    "contact": {
+      "whatsapp": "Escríbenos por WhatsApp"
+    },
+    "slider": {
+      "next": "Siguiente",
+      "previous": "Anterior"
     }
   },
   "products": {
@@ -51,7 +70,18 @@
       "from_price": "Desde {{ price }}",
       "variant": "Opción",
       "view_details": "Ver detalle",
-      "thumbnail": "Ver imagen {{ number }}"
+      "thumbnail": "Ver imagen {{ number }}",
+      "added": "Agregado",
+      "adding": "Agregando…",
+      "choose_options": "Elegir opción",
+      "decrease": "Disminuir cantidad",
+      "increase": "Aumentar cantidad",
+      "gallery": "Galería de imágenes",
+      "in_stock": "Disponible",
+      "options_count": "{{ count }} opciones de {{ option }}",
+      "taxes_included": "IVA incluido.",
+      "whatsapp_message": "Hola, quiero consultar por {{ title }}: {{ url }}",
+      "zoom": "Ampliar imagen"
     }
   },
   "collections": {
@@ -62,7 +92,16 @@
       "products_count": {
         "one": "{{ count }} producto",
         "other": "{{ count }} productos"
-      }
+      },
+      "choose_collection": "Elige una colección en el editor para mostrar productos.",
+      "clear_all": "Limpiar filtros",
+      "filter": "Filtrar",
+      "from": "Desde",
+      "to": "Hasta",
+      "no_matches": "Ningún producto coincide con estos filtros.",
+      "remove_filter": "Quitar filtro",
+      "show_results": "Ver resultados",
+      "view_all_categories": "Ver todas"
     }
   },
   "cart": {
@@ -76,7 +115,13 @@
       "remove": "Eliminar {{ title }}",
       "note": "Nota del pedido",
       "product": "Producto",
-      "total": "Total"
+      "total": "Total",
+      "decrease": "Disminuir cantidad de {{ title }}",
+      "increase": "Aumentar cantidad de {{ title }}",
+      "error": "No pudimos actualizar el carrito. Inténtalo de nuevo.",
+      "recommendations": "Complementa tu compra",
+      "remove_short": "Eliminar",
+      "view_cart": "Ver carrito"
     }
   },
   "search": {
@@ -102,5 +147,10 @@
       "expires_on": "Vence el {{ expires_on }}",
       "print": "Imprimir"
     }
+  },
+  "newsletter": {
+    "button": "Suscribirme",
+    "label": "Tu email",
+    "success": "¡Listo! Te suscribiste correctamente."
   }
 }
