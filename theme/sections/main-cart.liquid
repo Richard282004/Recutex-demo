@@ -1,10 +1,12 @@
+{{ 'section-pages.css' | asset_url | stylesheet_tag }}
+
 {%- comment -%}
   Base cart page (Phase 2). Works without JS via standard /cart form posts.
   Cart drawer (Ajax Cart API) arrives in Phase 10.
 {%- endcomment -%}
 <section class="section cart">
   <div class="page-width page-width--narrow">
-    <h1 class="section__title">{{ 'cart.general.title' | t }}</h1>
+    <h1 class="page-title">{{ 'cart.general.title' | t }}</h1>
 
     {%- if cart.item_count > 0 -%}
       <form action="{{ routes.cart_url }}" method="post" class="cart__form" id="CartForm">

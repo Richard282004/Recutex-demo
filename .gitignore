@@ -25,3 +25,4 @@ Thumbs.db
 *.log
 npm-debug.log*
 tmp/
+demo/products.csv

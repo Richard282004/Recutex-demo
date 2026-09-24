@@ -1,6 +1,8 @@
+{{ 'section-pages.css' | asset_url | stylesheet_tag }}
+
 <section class="section">
   <div class="page-width">
-    <h1 class="section__title">{{ section.settings.title | escape }}</h1>
+    <h1 class="page-title">{{ section.settings.title | escape }}</h1>
     <ul class="collection-list" role="list">
       {%- for collection in collections -%}
         {%- if collection.products_count > 0 -%}

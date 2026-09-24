@@ -5,11 +5,40 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "menu": { "type": "menu", "settings": { "heading": "Información", "menu": "footer" } }
+        "m1": {
+          "type": "menu",
+          "settings": {
+            "heading": "Productos",
+            "menu": "main-menu"
+          }
+        },
+        "m2": {
+          "type": "menu",
+          "settings": {
+            "heading": "Información",
+            "menu": "footer"
+          }
+        },
+        "t1": {
+          "type": "text",
+          "settings": {
+            "heading": "Casa matriz",
+            "text": "<p>Cauquenes 6609, Cerro Navia, Santiago.<br>Lunes a viernes de 9:00 a 18:00.<br>Cerrado de 13:00 a 14:00.</p>"
+          }
+        }
       },
-      "block_order": ["menu"],
-      "settings": { "show_payment_icons": true }
+      "block_order": [
+        "m1",
+        "m2",
+        "t1"
+      ],
+      "settings": {
+        "tagline": "Espumas, colchones y muebles de fabricación propia en Santiago de Chile.",
+        "show_payment_icons": true
+      }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }

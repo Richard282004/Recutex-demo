@@ -3,7 +3,7 @@ COMPOSE = docker compose
 RUN = $(COMPOSE) run --rm --service-ports dev
 EXEC = $(COMPOSE) run --rm dev
 
-.PHONY: help build dev stop shell login check lint format backup themes push-staging clean
+.PHONY: help build dev stop shell login check lint format backup themes push-staging clean demo-catalog demo-seed
 
 help: ## List commands
 	@grep -E '^[a-z-]+:.*##' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-14s %s\n", $$1, $$2}'
@@ -43,3 +43,9 @@ push-staging: ## Push to the unpublished staging theme (guarded, never live)
 
 clean: ## Remove containers and volumes (logs you out of the CLI)
 	$(COMPOSE) down -v
+
+demo-catalog: ## Build demo/products.csv from the public Recutex catalog (read-only)
+	$(EXEC) npm run demo:catalog
+
+demo-seed: ## Create collections, pages and menus in the DEMO store (Admin API)
+	$(EXEC) npm run demo:seed
