@@ -13,6 +13,9 @@
 .site-header {
   position: relative;
   display: block;
+  background: var(--color-background);
+
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties -- translucent where supported */
   background: rgb(from var(--color-background) r g b / 92%);
   backdrop-filter: saturate(1.6) blur(16px);
   transition: box-shadow var(--duration-base) var(--ease-out);

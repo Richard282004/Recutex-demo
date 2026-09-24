@@ -23,6 +23,14 @@
       if (!('IntersectionObserver' in window) || !('customElements' in window)) {
         document.documentElement.classList.remove('js-reveal');
       }
+      // Safety net: if theme.js never runs (network error), never leave content hidden.
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          if (!document.documentElement.hasAttribute('data-theme-ready')) {
+            document.documentElement.classList.remove('js-reveal');
+          }
+        }, 1500);
+      });
       window.theme = {
         routes: {
           root: {{ routes.root_url | json }},
