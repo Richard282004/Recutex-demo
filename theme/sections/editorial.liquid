@@ -1,0 +1,86 @@
+{%- comment -%} Storytelling block: large image + text. Content is fully editable. {%- endcomment -%}
+{{ 'section-home.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign image = section.settings.image
+  assign contain = false
+  if image == blank and section.settings.product != blank
+    assign image = section.settings.product.featured_media.preview_image
+    if section.settings.image_fit == 'contain'
+      assign contain = true
+    endif
+  endif
+-%}
+
+<section
+  class="section editorial editorial--image-{{ section.settings.image_position }}{% if section.settings.tinted %} section--tinted{% endif %}"
+  aria-labelledby="Heading-{{ section.id }}"
+>
+  <div class="page-width editorial__grid">
+    <div class="editorial__media{% if contain %} editorial__media--contain{% endif %}" data-reveal>
+      {%- if image -%}
+        {{
+          image
+          | image_url: width: 1600
+          | image_tag:
+            loading: 'lazy',
+            widths: '600, 900, 1200, 1600',
+            sizes: '(min-width: 990px) 50vw, 100vw',
+            alt: image.alt
+        }}
+      {%- else -%}
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder' }}
+      {%- endif -%}
+    </div>
+    <div class="editorial__text" data-reveal>
+      {%- if section.settings.heading != blank -%}
+        <h2 class="editorial__title" id="Heading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="editorial__body rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a class="button" href="{{ section.settings.button_link | default: routes.root_url }}">
+          {{- section.settings.button_label | escape -}}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Editorial",
+  "tag": "div",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Imagen" },
+    { "type": "product", "id": "product", "label": "Producto (imagen de respaldo)" },
+    {
+      "type": "select",
+      "id": "image_fit",
+      "label": "Ajuste de la imagen del producto",
+      "options": [
+        { "value": "cover", "label": "Llenar (fotos de ambiente)" },
+        { "value": "contain", "label": "Completa (fotos con fondo blanco)" }
+      ],
+      "default": "contain"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Posición de la imagen",
+      "options": [
+        { "value": "left", "label": "Izquierda" },
+        { "value": "right", "label": "Derecha" }
+      ],
+      "default": "left"
+    },
+    { "type": "text", "id": "heading", "label": "Título" },
+    { "type": "richtext", "id": "text", "label": "Texto" },
+    { "type": "text", "id": "button_label", "label": "Botón" },
+    { "type": "url", "id": "button_link", "label": "Enlace" },
+    { "type": "checkbox", "id": "tinted", "label": "Fondo de color", "default": false }
+  ],
+  "presets": [{ "name": "Editorial" }]
+}
+{% endschema %}

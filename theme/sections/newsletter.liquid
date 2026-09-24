@@ -1,0 +1,62 @@
+{%- comment -%} Newsletter signup using Shopify's native customer form (tagged "newsletter"). {%- endcomment -%}
+{{ 'section-home.css' | asset_url | stylesheet_tag }}
+
+<section class="section newsletter" aria-labelledby="Heading-{{ section.id }}">
+  <div class="page-width">
+    <div class="newsletter__card">
+      {% render 'brand-bands', class: 'newsletter__bands' %}
+      <div class="newsletter__text">
+        <h2 class="newsletter__title" id="Heading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+        {%- if section.settings.text != blank -%}
+          <p class="newsletter__subtitle">{{ section.settings.text | escape }}</p>
+        {%- endif -%}
+      </div>
+      {%- form 'customer', id: 'NewsletterForm', class: 'newsletter__form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        {%- if form.posted_successfully? -%}
+          <p class="form-message" role="status">{{ 'newsletter.success' | t }}</p>
+        {%- else -%}
+          <div class="newsletter__field">
+            <label class="visually-hidden" for="NewsletterEmail">{{ 'newsletter.label' | t }}</label>
+            <input
+              class="field__input"
+              id="NewsletterEmail"
+              type="email"
+              name="contact[email]"
+              autocomplete="email"
+              placeholder="{{ 'newsletter.label' | t }}"
+              required
+              {% if form.errors %}
+                aria-invalid="true" aria-describedby="NewsletterError"
+              {% endif %}
+            >
+            <button class="button button--primary" type="submit">{{ 'newsletter.button' | t }}</button>
+          </div>
+          {%- if form.errors -%}
+            <p class="form-message form-message--error" id="NewsletterError">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </p>
+          {%- endif -%}
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "tag": "div",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Título", "default": "Ofertas en tu correo" },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Texto",
+      "default": "Suscríbete para recibir nuestras promociones y novedades."
+    }
+  ],
+  "presets": [{ "name": "Newsletter" }]
+}
+{% endschema %}

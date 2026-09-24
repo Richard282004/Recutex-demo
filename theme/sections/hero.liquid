@@ -1,0 +1,175 @@
+{%- comment -%}
+  Premium hero. Two layouts:
+  - split: text + image panel (works with product cut-outs on a tinted panel)
+  - full: full-bleed photo with configurable overlay and content position
+  The image is the LCP element: loaded eagerly with fetchpriority=high, never lazy.
+{%- endcomment -%}
+{{ 'section-hero.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign desktop_image = s.image
+  if desktop_image == blank and s.product != blank
+    assign desktop_image = s.product.featured_media.preview_image
+  endif
+  assign mobile_image = s.image_mobile | default: desktop_image
+  assign contain = false
+  if s.image == blank and s.product != blank
+    assign contain = true
+  endif
+-%}
+
+<section
+  class="hero hero--{{ s.layout }} hero--align-{{ s.content_position }} hero--text-{{ s.text_tone }}{% if contain %} hero--contain{% endif %}"
+  style="--hero-overlay: {{ s.overlay_opacity | divided_by: 100.0 }}; --hero-min-height: {{ s.min_height }}vh;"
+  aria-labelledby="HeroTitle-{{ section.id }}"
+>
+  <div class="hero__media">
+    {%- if desktop_image != blank -%}
+      <picture>
+        {%- if s.image_mobile != blank -%}
+          <source
+            media="(max-width: 749px)"
+            srcset="{{ mobile_image | image_url: width: 750 }} 750w, {{ mobile_image | image_url: width: 1100 }} 1100w"
+            sizes="100vw"
+            width="{{ mobile_image.width }}"
+            height="{{ mobile_image.height }}"
+          >
+        {%- endif -%}
+        {%- if s.layout == 'split' -%}
+          {%- assign hero_sizes = '(min-width: 990px) 55vw, 100vw' -%}
+        {%- else -%}
+          {%- assign hero_sizes = '100vw' -%}
+        {%- endif -%}
+        {{
+          desktop_image
+          | image_url: width: 2400
+          | image_tag:
+            loading: 'eager',
+            fetchpriority: 'high',
+            widths: '600, 900, 1200, 1600, 2000, 2400',
+            sizes: hero_sizes,
+            alt: desktop_image.alt,
+            class: 'hero__image'
+        }}
+      </picture>
+    {%- else -%}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'hero__image placeholder' }}
+    {%- endif -%}
+  </div>
+
+  <div class="hero__content page-width">
+    <div class="hero__text">
+      {%- if s.title != blank -%}
+        <h1 class="hero__title" id="HeroTitle-{{ section.id }}">{{ s.title | escape }}</h1>
+      {%- endif -%}
+      {%- if settings.brand_bands and s.show_bands -%}
+        <div class="hero__bands" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      {%- endif -%}
+      {%- if s.subtitle != blank -%}
+        <p class="hero__subtitle">{{ s.subtitle | escape }}</p>
+      {%- endif -%}
+      {%- if s.button_label != blank or s.button_label_2 != blank -%}
+        <div class="hero__actions">
+          {%- if s.button_label != blank -%}
+            <a
+              class="button {% if s.layout == 'full' and s.text_tone == 'light' %}button--light{% else %}button--primary{% endif %}"
+              href="{{ s.button_link | default: routes.all_products_collection_url }}"
+            >
+              {{- s.button_label | escape -}}
+            </a>
+          {%- endif -%}
+          {%- if s.button_label_2 != blank -%}
+            <a
+              class="button {% if s.layout == 'full' and s.text_tone == 'light' %}button--ghost-light{% endif %}"
+              href="{{ s.button_link_2 | default: routes.all_products_collection_url }}"
+            >
+              {{- s.button_label_2 | escape -}}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "div",
+  "class": "section-hero",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Diseño",
+      "options": [
+        { "value": "split", "label": "Texto + imagen" },
+        { "value": "full", "label": "Imagen a pantalla completa" }
+      ],
+      "default": "split"
+    },
+    { "type": "header", "content": "Imagen" },
+    { "type": "image_picker", "id": "image", "label": "Imagen desktop" },
+    { "type": "image_picker", "id": "image_mobile", "label": "Imagen mobile", "info": "Opcional. Recomendado 3:4." },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Producto (imagen de respaldo)",
+      "info": "Si no hay imagen, se usa la foto principal de este producto."
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Oscurecer imagen (pantalla completa)",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "label": "Altura mínima",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "default": 80
+    },
+    { "type": "header", "content": "Contenido" },
+    { "type": "text", "id": "title", "label": "Título", "default": "Descansa mejor." },
+    { "type": "text", "id": "subtitle", "label": "Subtítulo", "default": "Diseñado para transformar tus noches." },
+    { "type": "text", "id": "button_label", "label": "Botón principal", "default": "Descubrir colchones" },
+    { "type": "url", "id": "button_link", "label": "Enlace botón principal" },
+    { "type": "text", "id": "button_label_2", "label": "Botón secundario", "default": "Ver ofertas" },
+    { "type": "url", "id": "button_link_2", "label": "Enlace botón secundario" },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Posición del contenido (pantalla completa)",
+      "options": [
+        { "value": "left", "label": "Izquierda" },
+        { "value": "center", "label": "Centro" },
+        { "value": "right", "label": "Derecha" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "text_tone",
+      "label": "Color del texto (pantalla completa)",
+      "options": [
+        { "value": "light", "label": "Claro" },
+        { "value": "dark", "label": "Oscuro" }
+      ],
+      "default": "light"
+    },
+    { "type": "checkbox", "id": "show_bands", "label": "Mostrar bandas de marca bajo el título", "default": true }
+  ],
+  "presets": [{ "name": "Hero" }]
+}
+{% endschema %}
