@@ -55,20 +55,20 @@ El script crea 12 colecciones automáticas con los handles originales, 3 página
 
 Crear colecciones **automatizadas** con la condición "Etiqueta del producto es igual a …" y ajustar el handle en "Edición del SEO del sitio web":
 
-| Handle | Título | Condición |
-| --- | --- | --- |
-| colchones | Colchones | tag `col-colchones` |
-| dormitorio | Camas | tag `col-dormitorio` |
-| dormitorio-1 | Dormitorio | tag `col-dormitorio-1` |
-| camarotes | Camarotes | tag `col-camarotes` |
-| comedores | Comedores | tag `col-comedores` |
-| sofas | Sofás | tag `col-sofas` |
-| sillon-futon | Sillón futón | tag `col-sillon-futon` |
-| futones | Futones | tag `col-futones` |
-| espuma | Láminas de espuma | tag `col-espuma` |
-| home | Destacados | tag `col-home` |
-| ofertas | Ofertas | tag `oferta` |
-| sala-de-estar | Living | cualquier condición: tag `col-sofas` / `col-sillon-futon` / `col-futones` |
+| Handle        | Título            | Condición                                                                 |
+| ------------- | ----------------- | ------------------------------------------------------------------------- |
+| colchones     | Colchones         | tag `col-colchones`                                                       |
+| dormitorio    | Camas             | tag `col-dormitorio`                                                      |
+| dormitorio-1  | Dormitorio        | tag `col-dormitorio-1`                                                    |
+| camarotes     | Camarotes         | tag `col-camarotes`                                                       |
+| comedores     | Comedores         | tag `col-comedores`                                                       |
+| sofas         | Sofás             | tag `col-sofas`                                                           |
+| sillon-futon  | Sillón futón      | tag `col-sillon-futon`                                                    |
+| futones       | Futones           | tag `col-futones`                                                         |
+| espuma        | Láminas de espuma | tag `col-espuma`                                                          |
+| home          | Destacados        | tag `col-home`                                                            |
+| ofertas       | Ofertas           | tag `oferta`                                                              |
+| sala-de-estar | Living            | cualquier condición: tag `col-sofas` / `col-sillon-futon` / `col-futones` |
 
 Páginas (contenido en `demo/pages/*.html`): `nosotros`, `devolucion-y-garantia`, `consultas-frecuentes`.
 
@@ -76,7 +76,7 @@ Menú `main-menu`: Dormitorio (Colchones [Resortes, Espuma], Camas, Camarotes) �
 
 ## 4. Filtros de colección
 
-Instalar la app gratuita **Shopify Search & Discovery** en la tienda demo → Filtros → agregar *Disponibilidad*, *Precio* y *Tipo de producto*. El theme muestra automáticamente los filtros configurados.
+Instalar la app gratuita **Shopify Search & Discovery** en la tienda demo → Filtros → agregar _Disponibilidad_, _Precio_ y _Tipo de producto_. El theme muestra automáticamente los filtros configurados.
 
 ## 5. Subir el theme
 
@@ -115,12 +115,12 @@ Tienda online → Preferencias → **Contraseña**: la tienda de desarrollo siem
 
 ## Datos a validar con Recutex antes de producción
 
-| Dato usado en la demo | Fuente |
-| --- | --- |
-| "Más de 30 años" | Página "Historia de la empresa" dice 34 años (fecha de redacción desconocida) |
-| 3 meses de garantía en muebles | /pages/devolucion-y-garantia |
-| Plazos de despacho 20 / 25 días hábiles | /pages/consultas-frecuentes |
-| Horario, dirección, teléfono, email, WhatsApp | /pages/consultas-frecuentes y header del sitio |
+| Dato usado en la demo                         | Fuente                                                                        |
+| --------------------------------------------- | ----------------------------------------------------------------------------- |
+| "Más de 30 años"                              | Página "Historia de la empresa" dice 34 años (fecha de redacción desconocida) |
+| 3 meses de garantía en muebles                | /pages/devolucion-y-garantia                                                  |
+| Plazos de despacho 20 / 25 días hábiles       | /pages/consultas-frecuentes                                                   |
+| Horario, dirección, teléfono, email, WhatsApp | /pages/consultas-frecuentes y header del sitio                                |
 
 ## Limitaciones conocidas de la demo
 

@@ -8,6 +8,7 @@ const theme = window.theme ?? { routes: {}, strings: {} };
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 document.documentElement.classList.remove('no-js');
+document.documentElement.setAttribute('data-theme-ready', '');
 
 /* ---------- Helpers ---------- */
 
