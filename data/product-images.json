@@ -1,0 +1,396 @@
+{
+  "source": "https://www.falabella.com/falabella-cl/brand/RECUTEX",
+  "takenAt": "2026-09-27T16:37:34.156Z",
+  "products": {
+    "camarote-desmontable-metal-madera": {
+      "source": "https://www.falabella.com/falabella-cl/product/147228471/CAMAROTE-PATAGONIA-1,5-PZA-METAL-MADERA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228472_01",
+          "height": 1150,
+          "width": 1280
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228472_02",
+          "height": 1154,
+          "width": 834
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228472_03",
+          "height": 808,
+          "width": 758
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228472_04",
+          "height": 826,
+          "width": 644
+        }
+      ]
+    },
+    "sofa-futon-folk-2-cpos-chocolate": {
+      "source": "https://www.falabella.com/falabella-cl/product/147226429/SOFA-CAMA-RANCO-CHOCOLATE",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147226430_01",
+          "height": 1254,
+          "width": 1254
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147226430_02",
+          "height": 1024,
+          "width": 1536
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147226430_03",
+          "height": 1024,
+          "width": 1536
+        }
+      ]
+    },
+    "comedor-ranco-4-sillas-chocolate": {
+      "source": "https://www.falabella.com/falabella-cl/product/138034050/COMEDOR-METAL-MADERA-RANCO-4-SILLAS-CHOCOLATE",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/158001653_01",
+          "height": 1254,
+          "width": 1254
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/158001653_02",
+          "height": 1199,
+          "width": 1312
+        }
+      ]
+    },
+    "cama-alta-pucon-1-1-2-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/147249572/CAMA-ALTA-PUCON-15PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147249573_01",
+          "height": 656,
+          "width": 816
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147249573_02",
+          "height": 722,
+          "width": 882
+        }
+      ]
+    },
+    "cama-alta-luna": {
+      "source": "https://www.falabella.com/falabella-cl/product/153978315/cama-alta-metal-luna-1pza",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153978316_01",
+          "height": 1273,
+          "width": 1254
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153978316_02",
+          "height": 1500,
+          "width": 1500
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153978316_03",
+          "height": 1377,
+          "width": 1325
+        }
+      ]
+    },
+    "camarote-desmontable-patagonia-1-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/147228620/CAMAROTE-PATAGONIA-1PZA-METAL-MADERA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228621_01",
+          "height": 1150,
+          "width": 1280
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228621_02",
+          "height": 1154,
+          "width": 834
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228621_03",
+          "height": 808,
+          "width": 758
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147228621_04",
+          "height": 826,
+          "width": 644
+        }
+      ]
+    },
+    "camarote-media-luna": {
+      "source": "https://www.falabella.com/falabella-cl/product/147575961/CAMAROTE-LUNA-METAL-1PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147575962_01",
+          "height": 818,
+          "width": 988
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147575962_02",
+          "height": 776,
+          "width": 1022
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147575962_03",
+          "height": 900,
+          "width": 766
+        }
+      ]
+    },
+    "colchon-plus-resorte-1-5-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/141402134/COLCHON-DE-RESORTES-DORMILAND-PLUS-BETTER-1.5PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/141402135_01",
+          "height": 1500,
+          "width": 1500
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/141402135_02",
+          "height": 1076,
+          "width": 1000
+        }
+      ]
+    },
+    "colchon-plus-resorte-2-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/141401867/COLCHON-DE-RESORTES-DORMILAND-PLUS-BETTER-2PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/141401868_01",
+          "height": 1500,
+          "width": 1500
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/141401868_02",
+          "height": 1076,
+          "width": 1000
+        }
+      ]
+    },
+    "colchon-plus-resorte-king": {
+      "source": "https://www.falabella.com/falabella-cl/product/141401867/COLCHON-DE-RESORTES-DORMILAND-PLUS-BETTER-2PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/141401868_01",
+          "height": 1500,
+          "width": 1500
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/141401868_02",
+          "height": 1076,
+          "width": 1000
+        }
+      ]
+    },
+    "colchon-plus-resorte-super-king": {
+      "source": "https://www.falabella.com/falabella-cl/product/141401867/COLCHON-DE-RESORTES-DORMILAND-PLUS-BETTER-2PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/141401868_01",
+          "height": 1500,
+          "width": 1500
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/141401868_02",
+          "height": 1076,
+          "width": 1000
+        }
+      ]
+    },
+    "camarote-familiar": {
+      "source": "https://www.falabella.com/falabella-cl/product/138829588/CAMAROTE-FAMILIAR-NATURAL-2-y-1.5PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138829589_01",
+          "height": 1100,
+          "width": 882
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138829589_02",
+          "height": 926,
+          "width": 694
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138829589_03",
+          "height": 1151,
+          "width": 905
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138829589_04",
+          "height": 1161,
+          "width": 852
+        }
+      ]
+    },
+    "colchon-constellation-resorte-super-king": {
+      "source": "https://www.falabella.com/falabella-cl/product/147656951/COLCHON-RESORTES-CONTSELLATION-SUPER-KING",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656952_01",
+          "height": 1054,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656952_02",
+          "height": 889,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656952_03",
+          "height": 1500,
+          "width": 1125
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656952_04",
+          "height": 1500,
+          "width": 943
+        }
+      ]
+    },
+    "colchon-constellation-resorte-1-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/147656523/COLCHON-RESORTES-CONSTELLATION-15PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_01",
+          "height": 1054,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_02",
+          "height": 889,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_03",
+          "height": 1500,
+          "width": 1125
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_04",
+          "height": 1500,
+          "width": 943
+        }
+      ]
+    },
+    "colchon-constellation-resorte-1-5-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/147656523/COLCHON-RESORTES-CONSTELLATION-15PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_01",
+          "height": 1054,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_02",
+          "height": 889,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_03",
+          "height": 1500,
+          "width": 1125
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_04",
+          "height": 1500,
+          "width": 943
+        }
+      ]
+    },
+    "colchon-constellation-resorte-2-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/147656523/COLCHON-RESORTES-CONSTELLATION-15PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_01",
+          "height": 1054,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_02",
+          "height": 889,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_03",
+          "height": 1500,
+          "width": 1125
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_04",
+          "height": 1500,
+          "width": 943
+        }
+      ]
+    },
+    "colchon-constellation-resorte-king": {
+      "source": "https://www.falabella.com/falabella-cl/product/147656523/COLCHON-RESORTES-CONSTELLATION-15PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_01",
+          "height": 1054,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_02",
+          "height": 889,
+          "width": 1600
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_03",
+          "height": 1500,
+          "width": 1125
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147656524_04",
+          "height": 1500,
+          "width": 943
+        }
+      ]
+    },
+    "colchon-plus-resorte-1-plaza": {
+      "source": "https://www.falabella.com/falabella-cl/product/141402277/COLCHON-DE-RESORTES-DORMILAND-PLUS-BETTER-1PZA",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/141402278_01",
+          "height": 1500,
+          "width": 1500
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/141402278_02",
+          "height": 1076,
+          "width": 1000
+        }
+      ]
+    },
+    "futon-metal-madera-rojo": {
+      "source": "https://www.falabella.com/falabella-cl/product/147191278/SOFA-FUTON-FOLK-1PZA-ROJO",
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191279_01",
+          "height": 928,
+          "width": 1120
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191279_02",
+          "height": 928,
+          "width": 1120
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191279_03",
+          "height": 1500,
+          "width": 1500
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191279_04",
+          "height": 1500,
+          "width": 1500
+        }
+      ]
+    }
+  }
+}
