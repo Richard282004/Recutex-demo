@@ -1,29 +1,80 @@
+name: recutex
+
+# Shared settings for the app containers. `environment` wins over values in .env.local, so the app
+# always reaches the database by its service name inside the Docker network.
+x-app: &app
+  env_file:
+    - path: .env
+      required: false
+    - path: .env.local
+      required: false
+  depends_on:
+    db:
+      condition: service_healthy
+
 services:
+  # PostgreSQL with the catalog. Schema from db/schema.sql; data with `npm run db:seed`.
+  db:
+    image: postgres:17-alpine
+    container_name: recutex-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: recutex
+      POSTGRES_USER: recutex
+      # From .env (not versioned). Compose stops with this message if it is missing.
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env (see .env.example)}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    ports:
+      # Only reachable from this machine (not the local network); 5433 avoids a local PostgreSQL on 5432.
+      - '127.0.0.1:5433:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U recutex -d recutex']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Development with hot reload: `docker compose up dev`
   dev:
-    build: .
+    <<: *app
+    build:
+      context: .
+      target: dev
     image: recutex-storefront-dev
     container_name: recutex-dev
-    working_dir: /app
-    env_file:
-      - path: .env
-        required: false
-    environment:
-      THEME_DEV_PORT: ${THEME_DEV_PORT:-9292}
     volumes:
-      # Source code: edits on the host are seen instantly by `shopify theme dev`.
       - .:/app
-      # Keep container-built node_modules separate from the host.
       - node_modules:/app/node_modules
-      # Persist Shopify CLI session between runs (interactive login).
-      - shopify-config:/home/node/.config
-      - shopify-cache:/home/node/.cache
+      - next_cache:/app/.next
     ports:
-      - '${THEME_DEV_PORT:-9292}:${THEME_DEV_PORT:-9292}'
-    stdin_open: true
-    tty: true
-    command: npm run dev
+      - '3000:3000'
+    environment:
+      # File watching through Docker Desktop bind mounts
+      WATCHPACK_POLLING: 'true'
+      DATABASE_URL: postgres://recutex:${POSTGRES_PASSWORD}@db:5432/recutex
+      MEDIA_DIR: /app/storage/media
+
+  # Production image, same as deploy: `docker compose --profile prod up -d --build web`
+  web:
+    <<: *app
+    build:
+      context: .
+      target: runner
+    image: recutex-storefront
+    container_name: recutex-web
+    restart: unless-stopped
+    ports:
+      - '3100:3000'
+    environment:
+      DATABASE_URL: postgres://recutex:${POSTGRES_PASSWORD}@db:5432/recutex
+      MEDIA_DIR: /app/storage/media
+    volumes:
+      # Product photos downloaded by `npm run db:seed` (not baked into the image).
+      - ./storage/media:/app/storage/media:ro
+    profiles: ['prod']
 
 volumes:
   node_modules:
-  shopify-config:
-  shopify-cache:
+  next_cache:
+  pgdata:

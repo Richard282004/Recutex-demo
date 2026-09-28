@@ -1,0 +1,4689 @@
+{
+  "source": "https://www.falabella.com/falabella-cl/brand/RECUTEX",
+  "takenAt": "2026-09-27T16:37:34.156Z",
+  "products": [
+    {
+      "id": "fal-149894845",
+      "handle": "camarote-robust-1-plaza-cama-nido",
+      "title": "CAMAROTE ROBUST 1 plaza + CAMA NIDO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/149894846_01",
+          "height": 1500,
+          "width": 1551,
+          "alt": "CAMAROTE ROBUST 1 plaza + CAMA NIDO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/149894846_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE ROBUST 1 plaza + CAMA NIDO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/149894846_03",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMAROTE ROBUST 1 plaza + CAMA NIDO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-149894846",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 401990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 401990,
+      "priceMax": 401990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/149894845/CAMAROTE-ROBUST-1PZA-+-CAMA-NIDO"
+    },
+    {
+      "id": "fal-157915658",
+      "handle": "sofa-cama-de-espuma-premium-dualis-190x75x44",
+      "title": "Sofá Cama de Espuma Premium Dualis 190x75x44",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sofas", "sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915661_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915661_02",
+          "height": 1086,
+          "width": 1448,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915661_03",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915659_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915660_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915662_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915663_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915664_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157915665_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x75x44"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Dorado", "Gris cemento", "Gris claro", "Café", "Burdeos", "Beige", "Negro"]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fal-157915659",
+          "title": "Dorado",
+          "options": ["Dorado"],
+          "price": 125990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157915659_01"
+        },
+        {
+          "id": "fal-157915660",
+          "title": "Gris cemento",
+          "options": ["Gris cemento"],
+          "price": 125990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157915660_01"
+        },
+        {
+          "id": "fal-157915661",
+          "title": "Gris claro",
+          "options": ["Gris claro"],
+          "price": 125990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157915661_01"
+        },
+        {
+          "id": "fal-157915662",
+          "title": "Café",
+          "options": ["Café"],
+          "price": 125990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157915662_01"
+        },
+        {
+          "id": "fal-157915663",
+          "title": "Burdeos",
+          "options": ["Burdeos"],
+          "price": 125990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157915663_01"
+        },
+        {
+          "id": "fal-157915664",
+          "title": "Beige",
+          "options": ["Beige"],
+          "price": 125990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157915664_01"
+        },
+        {
+          "id": "fal-157915665",
+          "title": "Negro",
+          "options": ["Negro"],
+          "price": 125990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157915665_01"
+        }
+      ],
+      "priceMin": 125990,
+      "priceMax": 125990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/157915658/sofa-cama-de-espuma-premium-dualis-190x75x44"
+    },
+    {
+      "id": "fal-153828517",
+      "handle": "camarote-montana-1-5-y-2-plazas",
+      "title": "Camarote Montaña 1.5 Y 2 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153828518_01",
+          "height": 826,
+          "width": 986,
+          "alt": "Camarote Montaña 1.5 Y 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153828518_02",
+          "height": 926,
+          "width": 1006,
+          "alt": "Camarote Montaña 1.5 Y 2 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-153828518",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 197990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 197990,
+      "priceMax": 197990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153828517/camarote-montana-1-5-y-2-0-plazas"
+    },
+    {
+      "id": "fal-157670653",
+      "handle": "sofa-espuma-premium-dualis-190x90x44",
+      "title": "SOFA ESPUMA PREMIUM DUALIS 190x90x44",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sofas", "sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670655_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670655_02",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670655_03",
+          "height": 1448,
+          "width": 1086,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670654_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670656_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670657_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670658_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157670659_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "SOFA ESPUMA PREMIUM DUALIS 190x90x44"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Dorado", "Beige", "Gris claro", "Burdeos", "Café", "Negro"]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fal-157670654",
+          "title": "Dorado",
+          "options": ["Dorado"],
+          "price": 134990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157670654_01"
+        },
+        {
+          "id": "fal-157670655",
+          "title": "Beige",
+          "options": ["Beige"],
+          "price": 134990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157670655_01"
+        },
+        {
+          "id": "fal-157670656",
+          "title": "Gris claro",
+          "options": ["Gris claro"],
+          "price": 134990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157670656_01"
+        },
+        {
+          "id": "fal-157670657",
+          "title": "Burdeos",
+          "options": ["Burdeos"],
+          "price": 134990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157670657_01"
+        },
+        {
+          "id": "fal-157670658",
+          "title": "Café",
+          "options": ["Café"],
+          "price": 134990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157670658_01"
+        },
+        {
+          "id": "fal-157670659",
+          "title": "Negro",
+          "options": ["Negro"],
+          "price": 134990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157670659_01"
+        }
+      ],
+      "priceMin": 134990,
+      "priceMax": 134990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/157670653/sofa-espuma-premium-dualis"
+    },
+    {
+      "id": "fal-138841438",
+      "handle": "camarote-metalico-milan-1-5-plazas",
+      "title": "CAMAROTE METALICO MILAN 1.5 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138841439_01",
+          "height": 1254,
+          "width": 1254,
+          "alt": "CAMAROTE METALICO MILAN 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138841439_02",
+          "height": 1254,
+          "width": 1254,
+          "alt": "CAMAROTE METALICO MILAN 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138841439_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138841439_04",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1.5 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138841439",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 138990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 138990,
+      "priceMax": 138990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138841438/CAMAROTE-METALICO-PEGASO-1.5PZA"
+    },
+    {
+      "id": "fal-138443507",
+      "handle": "colchon-colchoneta-espuma-economico-clipper-liso-1-5-plazas-d15x12-cm-alto",
+      "title": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1.5 plazas D15x12 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443508_01",
+          "height": 1138,
+          "width": 898,
+          "alt": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1.5 plazas D15x12 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443508_02",
+          "height": 1008,
+          "width": 954,
+          "alt": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1.5 plazas D15x12 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443508_03",
+          "height": 1094,
+          "width": 922,
+          "alt": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1.5 plazas D15x12 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138443508",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 49990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 49990,
+      "priceMax": 49990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138443507/COLCHONETA-ESPUMA-ECONOMICO-CLIPPER-LISO-1.5P-D15-X-12CM-ALTO"
+    },
+    {
+      "id": "fal-147192961",
+      "handle": "sofa-futon-folk-1-plaza-chocolate",
+      "title": "SOFA FUTON FOLK 1 plaza CHOCOLATE",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147192962_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1 plaza CHOCOLATE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147192962_02",
+          "height": 800,
+          "width": 1078,
+          "alt": "SOFA FUTON FOLK 1 plaza CHOCOLATE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147192962_03",
+          "height": 754,
+          "width": 830,
+          "alt": "SOFA FUTON FOLK 1 plaza CHOCOLATE"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147192962",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 177990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 177990,
+      "priceMax": 177990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147192961/SOFA-FUTON-FOLK-1PZA-CHOCOLATE"
+    },
+    {
+      "id": "fal-138435991",
+      "handle": "colchon-colchoneta-espuma-economico-clipper-liso-1-plaza-d15x12-cm-alto",
+      "title": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1 plaza D15x12 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138435992_01",
+          "height": 1213,
+          "width": 903,
+          "alt": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1 plaza D15x12 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138435992_02",
+          "height": 1008,
+          "width": 954,
+          "alt": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1 plaza D15x12 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138435992_03",
+          "height": 1094,
+          "width": 922,
+          "alt": "COLCHON COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 1 plaza D15x12 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138435992",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 43990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 43990,
+      "priceMax": 43990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138435991/COLCHONETA-ESPUMA-ECONOMICO-CLIPPER-LISO-1P-D15-X-12CM-ALTO"
+    },
+    {
+      "id": "fal-147218303",
+      "handle": "sofa-futon-folk-2-plazas",
+      "title": "SOFA FUTON FOLK 2 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/158109154_01",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/158109154_02",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/158109154_03",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147218304_01",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/158109152_01",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/158109153_01",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/158109155_01",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/158109156_01",
+          "height": 1086,
+          "width": 1448,
+          "alt": "SOFA FUTON FOLK 2 plazas"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Negro", "Café", "Dorado", "Pistacho", "Rojo", "Azul marino"]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fal-147218304",
+          "title": "Negro",
+          "options": ["Negro"],
+          "price": 205990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/147218304_01"
+        },
+        {
+          "id": "fal-158109152",
+          "title": "Café",
+          "options": ["Café"],
+          "price": 205990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/158109152_01"
+        },
+        {
+          "id": "fal-158109153",
+          "title": "Dorado",
+          "options": ["Dorado"],
+          "price": 205990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/158109153_01"
+        },
+        {
+          "id": "fal-158109154",
+          "title": "Pistacho",
+          "options": ["Pistacho"],
+          "price": 205990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/158109154_01"
+        },
+        {
+          "id": "fal-158109155",
+          "title": "Rojo",
+          "options": ["Rojo"],
+          "price": 205990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/158109155_01"
+        },
+        {
+          "id": "fal-158109156",
+          "title": "Azul marino",
+          "options": ["Azul marino"],
+          "price": 205990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/158109156_01"
+        }
+      ],
+      "priceMin": 205990,
+      "priceMax": 205990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147218303/SOFA-FUTON-FOLK-2PZA-NEGRO"
+    },
+    {
+      "id": "fal-138335357",
+      "handle": "colchon-colchoneta-superfoam-espuma-estampado-1-5-plazas-d15x12-cm",
+      "title": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x12 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335358_01",
+          "height": 661,
+          "width": 953,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335358_02",
+          "height": 1129,
+          "width": 902,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335358_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x12 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138335358",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 49990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 49990,
+      "priceMax": 49990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138335357/COLCHON-COLCHONETA-SUPERFOAM-ESPUMA-ESTAMPADO-1.5-PZA-D15-X-12CM"
+    },
+    {
+      "id": "fal-139543861",
+      "handle": "camarote-xl-2-plazas-x-2-plazas",
+      "title": "CAMAROTE XL 2 plazas X 2 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/139543864_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139543864_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139543864_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139543864_04",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139543864_05",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-139543864",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 261990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 261990,
+      "priceMax": 261990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/139543861/CAMAROTE-XL-2PZA-X-2PZA"
+    },
+    {
+      "id": "fal-147248301",
+      "handle": "camarote-studio-pucon-1-5-plazas-chocolate",
+      "title": "CAMAROTE STUDIO PUCON 1.5 plazas CHOCOLATE",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147248302_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE STUDIO PUCON 1.5 plazas CHOCOLATE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147248302_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMAROTE STUDIO PUCON 1.5 plazas CHOCOLATE"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147248302",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 299990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 299990,
+      "priceMax": 299990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147248301/CAMAROTE-STUDIO-PUCON-1.5PZA-CHOCOLATE"
+    },
+    {
+      "id": "fal-138335295",
+      "handle": "colchon-colchoneta-superfoam-espuma-estampado-1-plaza-d15x12-cm",
+      "title": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x12 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335296_01",
+          "height": 661,
+          "width": 953,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335296_02",
+          "height": 1129,
+          "width": 902,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335296_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x12 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138335296",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 43990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 43990,
+      "priceMax": 43990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138335295/COLCHON-COLCHONETA-SUPERFOAM-ESPUMA-ESTAMPADO-1-PZA-D15-X-12CM"
+    },
+    {
+      "id": "fal-138863363",
+      "handle": "camarote-metalico-milan-1-plaza-2-colchones-espuma",
+      "title": "CAMAROTE METALICO MILAN 1 plaza + 2 COLCHONES ESPUMA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863365_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1 plaza + 2 COLCHONES ESPUMA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863365_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1 plaza + 2 COLCHONES ESPUMA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863365_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1 plaza + 2 COLCHONES ESPUMA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138863365",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 216990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 216990,
+      "priceMax": 216990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138863363/CAMAROTE-METALICO-PEGASO-1-PZA-+-2-COLCHONES-ESPUMA"
+    },
+    {
+      "id": "fal-139728177",
+      "handle": "camarote-xl-2-plazas-x-2-plazas-con-colchones",
+      "title": "CAMAROTE XL 2 plazas X 2 plazas CON COLCHONES",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/139728178_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas CON COLCHONES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139728178_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas CON COLCHONES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139728178_03",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMAROTE XL 2 plazas X 2 plazas CON COLCHONES"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-139728178",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 370990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 370990,
+      "priceMax": 370990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/139728177/CAMAROTE-XL-2PZA-X-2PZA-CON-COLCHONES"
+    },
+    {
+      "id": "fal-140101832",
+      "handle": "colchon-clinico-viscoelastico-antiescara-d60-x-mt3",
+      "title": "COLCHON CLINICO VISCOELASTICO ANTIESCARA D60 X MT3.",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/140101833_01",
+          "height": 745,
+          "width": 800,
+          "alt": "COLCHON CLINICO VISCOELASTICO ANTIESCARA D60 X MT3."
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140101833_02",
+          "height": 745,
+          "width": 800,
+          "alt": "COLCHON CLINICO VISCOELASTICO ANTIESCARA D60 X MT3."
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-140101833",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 146990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 146990,
+      "priceMax": 146990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/140101832/COLCHON-CLINICO-VISCOELASTICO-ANTIESCARA-D60-X-MT3"
+    },
+    {
+      "id": "fal-147215434",
+      "handle": "sofa-futon-folk-1-plaza-mostaza",
+      "title": "SOFA FUTON FOLK 1 plaza MOSTAZA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215435_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1 plaza MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215435_02",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1 plaza MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215435_03",
+          "height": 746,
+          "width": 818,
+          "alt": "SOFA FUTON FOLK 1 plaza MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215435_04",
+          "height": 744,
+          "width": 816,
+          "alt": "SOFA FUTON FOLK 1 plaza MOSTAZA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147215435",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 160990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 160990,
+      "priceMax": 160990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147215434/SOFA-FUTON-FOLK-1PZA-MOSTAZA"
+    },
+    {
+      "id": "fal-139299087",
+      "handle": "camarote-clipper-1-5-plazas-natural",
+      "title": "CAMAROTE CLIPPER 1.5 plazas NATURAL",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/139299088_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE CLIPPER 1.5 plazas NATURAL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139299088_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE CLIPPER 1.5 plazas NATURAL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139299088_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE CLIPPER 1.5 plazas NATURAL"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-139299088",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 239990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 239990,
+      "priceMax": 239990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/139299087/CAMAROTE-CLIPPER-1.5-PLZA-NATURAL"
+    },
+    {
+      "id": "fal-147191918",
+      "handle": "sofa-futon-folk-1-plaza-negro",
+      "title": "SOFA FUTON FOLK 1 plaza NEGRO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191919_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1 plaza NEGRO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191919_02",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1 plaza NEGRO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191919_03",
+          "height": 1500,
+          "width": 1500,
+          "alt": "SOFA FUTON FOLK 1 plaza NEGRO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191919_04",
+          "height": 1500,
+          "width": 1500,
+          "alt": "SOFA FUTON FOLK 1 plaza NEGRO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147191919_05",
+          "height": 610,
+          "width": 820,
+          "alt": "SOFA FUTON FOLK 1 plaza NEGRO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147191919",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 160990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 160990,
+      "priceMax": 160990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147191918/SOFA-FUTON-FOLK-1PZA-NEGRO"
+    },
+    {
+      "id": "fal-139303478",
+      "handle": "camarote-verona-1-plaza-natural-2-colchones-espuma",
+      "title": "CAMAROTE VERONA 1 plaza NATURAL+2 COLCHONES ESPUMA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/139303479_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE VERONA 1 plaza NATURAL+2 COLCHONES ESPUMA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139303479_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE VERONA 1 plaza NATURAL+2 COLCHONES ESPUMA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/139303479_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE VERONA 1 plaza NATURAL+2 COLCHONES ESPUMA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-139303479",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 225990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 225990,
+      "priceMax": 225990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/139303478/CAMAROTE-CLIPPER-1PLZA-NATURAL+2-COLCHONES-ESPUMA"
+    },
+    {
+      "id": "fal-153842373",
+      "handle": "cama-rebeca-metal-1-5-plazas",
+      "title": "CAMA REBECA METAL 1.5 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["dormitorio", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153842374_01",
+          "height": 1075,
+          "width": 1165,
+          "alt": "CAMA REBECA METAL 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153842374_02",
+          "height": 1422,
+          "width": 1293,
+          "alt": "CAMA REBECA METAL 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153842374_03",
+          "height": 1038,
+          "width": 1213,
+          "alt": "CAMA REBECA METAL 1.5 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-153842374",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 99990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 99990,
+      "priceMax": 99990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153842373/cama-rebeca-metal-1-5pza"
+    },
+    {
+      "id": "fal-153979012",
+      "handle": "cama-alta-metal-luna-colchon-espuma-d18x12-cm-1-plaza",
+      "title": "CAMA ALTA METAL LUNA +COLCHON ESPUMA D18x12 cm 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153979013_01",
+          "height": 1377,
+          "width": 1325,
+          "alt": "CAMA ALTA METAL LUNA +COLCHON ESPUMA D18x12 cm 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153979013_02",
+          "height": 1455,
+          "width": 1600,
+          "alt": "CAMA ALTA METAL LUNA +COLCHON ESPUMA D18x12 cm 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-153979013",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 218990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 218990,
+      "priceMax": 218990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153979012/cama-alta-metal-luna-colchon-espuma-d18x12cm-1pza"
+    },
+    {
+      "id": "fal-150208779",
+      "handle": "cama-nido-resistant-1-plaza",
+      "title": "CAMA NIDO RESISTANT 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["dormitorio", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/150208780_01",
+          "height": 829,
+          "width": 1600,
+          "alt": "CAMA NIDO RESISTANT 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/150208780_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMA NIDO RESISTANT 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/150208780_03",
+          "height": 987,
+          "width": 1600,
+          "alt": "CAMA NIDO RESISTANT 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-150208780",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 120000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 120000,
+      "priceMax": 120000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/150208779/cama-nido-resistant-1pza"
+    },
+    {
+      "id": "fal-153948529",
+      "handle": "cama-rebeca-metal-1-5-plazas-colchon-espuma-d18x12-cm",
+      "title": "CAMA REBECA METAL 1.5 plazas+COLCHON ESPUMA D18x12 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153948530_01",
+          "height": 1195,
+          "width": 896,
+          "alt": "CAMA REBECA METAL 1.5 plazas+COLCHON ESPUMA D18x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153948530_02",
+          "height": 1195,
+          "width": 896,
+          "alt": "CAMA REBECA METAL 1.5 plazas+COLCHON ESPUMA D18x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153948530_03",
+          "height": 1075,
+          "width": 1165,
+          "alt": "CAMA REBECA METAL 1.5 plazas+COLCHON ESPUMA D18x12 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-153948530",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 147990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 147990,
+      "priceMax": 147990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153948529/cama-rebeca-metal-1-5pzacolchon-espuma-d18x12cm"
+    },
+    {
+      "id": "fal-138438361",
+      "handle": "colchon-clipper-espuma-liso-2-plazas-d15x20-cm",
+      "title": "COLCHON CLIPPER ESPUMA LISO 2 plazas D15x20 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138438362_01",
+          "height": 1008,
+          "width": 954,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 2 plazas D15x20 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138438362_02",
+          "height": 1094,
+          "width": 922,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 2 plazas D15x20 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138438362_03",
+          "height": 1213,
+          "width": 903,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 2 plazas D15x20 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138438362",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 108990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 108990,
+      "priceMax": 108990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138438361/COLCHON-CLIPPER-ESPUMA-LISO-2P-D15X20CM"
+    },
+    {
+      "id": "fal-153950215",
+      "handle": "cama-rebeca-metal-1-plaza-colchon-d18x12-cm",
+      "title": "CAMA REBECA METAL 1 plaza+ COLCHON D18x12 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153950216_01",
+          "height": 720,
+          "width": 539,
+          "alt": "CAMA REBECA METAL 1 plaza+ COLCHON D18x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153950216_02",
+          "height": 720,
+          "width": 539,
+          "alt": "CAMA REBECA METAL 1 plaza+ COLCHON D18x12 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-153950216",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 144990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 144990,
+      "priceMax": 144990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153950215/cama-rebeca-metal-1pza-colchon-d18x12cm"
+    },
+    {
+      "id": "fal-140899898",
+      "handle": "colchon-espuma-acolchado-dormiland-super-d18x20-cm-alto-1-plaza",
+      "title": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/140899899_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140899899_02",
+          "height": 759,
+          "width": 967,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140899899_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140899899_04",
+          "height": 1280,
+          "width": 848,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-140899899",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 69000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 69000,
+      "priceMax": 69000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/140899898/COLCHON-ESPUMA-ACOLCHADO-DORMILAND-SUPER-D18X20CM-ALTO-1PZA"
+    },
+    {
+      "id": "fal-139305029",
+      "handle": "camarote-verona-1-5-plazas-natural",
+      "title": "CAMAROTE VERONA 1.5 plazas NATURAL",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/139305030_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE VERONA 1.5 plazas NATURAL"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-139305030",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 145990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 145990,
+      "priceMax": 145990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/139305029/CAMAROTE-MOON-15PZA-NATURAL"
+    },
+    {
+      "id": "fal-139302029",
+      "handle": "camarote-verona-1-plaza-natural",
+      "title": "CAMAROTE VERONA 1 plaza NATURAL",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/139302030_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE VERONA 1 plaza NATURAL"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-139302030",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 136990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 136990,
+      "priceMax": 136990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/139302029/CAMAROTE-MOON-1PZA-NATURAL"
+    },
+    {
+      "id": "fal-142940510",
+      "handle": "colchon-espuma-new-black-white-2-plazas-16-cm-alto",
+      "title": "COLCHON ESPUMA NEW BLACK & WHITE 2 plazas 16 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/142940511_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 2 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/142940511_02",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 2 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/142940511_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 2 plazas 16 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-142940511",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 90000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 90000,
+      "priceMax": 90000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/142940510/COLCHON-ESPUMA-NEW-BLACK-WHITE-2PZA-16CM-ALTO"
+    },
+    {
+      "id": "fal-147577452",
+      "handle": "colchon-colchoneta-espuma-summer-liso-1-5-plazas-d15x12-cm",
+      "title": "COLCHON COLCHONETA ESPUMA SUMMER LISO 1.5 plazas D15x12 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147577453_01",
+          "height": 874,
+          "width": 1292,
+          "alt": "COLCHON COLCHONETA ESPUMA SUMMER LISO 1.5 plazas D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147577453_02",
+          "height": 510,
+          "width": 652,
+          "alt": "COLCHON COLCHONETA ESPUMA SUMMER LISO 1.5 plazas D15x12 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147577453",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 70000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 70000,
+      "priceMax": 70000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147577452/COLCHON-COLCHONETA-ESPUMA-SUMMER-LISO-15PZA-D15X12CM"
+    },
+    {
+      "id": "fal-138443509",
+      "handle": "colchon-clipper-espuma-liso-1-5-plazas-16-cm-alto",
+      "title": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas 16 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443510_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443510_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443510_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas 16 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138443510",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 60990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 60990,
+      "priceMax": 60990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138443509/COLCHON-CLIPPER-ESPUMA-LISO-1.5PZA-16CM-ALTO"
+    },
+    {
+      "id": "fal-140900132",
+      "handle": "colchon-espuma-acolchado-dormiland-super-d18x20-cm-alto-1-5-plazas",
+      "title": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1.5 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900133_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900133_02",
+          "height": 759,
+          "width": 967,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900133_03",
+          "height": 1280,
+          "width": 848,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900133_04",
+          "height": 1500,
+          "width": 1125,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 1.5 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-140900133",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 79000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 79000,
+      "priceMax": 79000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/140900132/COLCHON-ESPUMA-ACOLCHADO-DORMILAND-SUPER-D18X20CM-ALTO-1.5PZA"
+    },
+    {
+      "id": "fal-138338549",
+      "handle": "colchon-superfoam-espuma-estampado-1-plaza-d15x15-cm",
+      "title": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x15 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338550_01",
+          "height": 661,
+          "width": 953,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x15 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338550_02",
+          "height": 1129,
+          "width": 902,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x15 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338550_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1 plaza D15x15 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138338550",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 51990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 51990,
+      "priceMax": 51990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138338549/COLCHON-SUPERFOAM-ESPUMA-ESTAMPADO-1-PZA-D15-X-15CM"
+    },
+    {
+      "id": "fal-138437231",
+      "handle": "colchoneta-espuma-economico-clipper-liso-2-plazas-d15x12-cm-alto",
+      "title": "COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 2 plazas D15x12 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138437232_01",
+          "height": 1008,
+          "width": 954,
+          "alt": "COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 2 plazas D15x12 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138437232_02",
+          "height": 1094,
+          "width": 922,
+          "alt": "COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 2 plazas D15x12 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138437232_03",
+          "height": 1213,
+          "width": 903,
+          "alt": "COLCHONETA ESPUMA ECONOMICO CLIPPER LISO 2 plazas D15x12 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138437232",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 68990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 68990,
+      "priceMax": 68990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138437231/COLCHONETA-ESPUMA-ECONOMICO-CLIPPER-LISO-2P-D15-X-12CM-ALTO"
+    },
+    {
+      "id": "fal-142939533",
+      "handle": "colchon-espuma-new-black-white-1-plaza-16-cm-alto",
+      "title": "COLCHON ESPUMA NEW BLACK & WHITE 1 plaza 16 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/142939534_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 1 plaza 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/142939534_02",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 1 plaza 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/142939534_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 1 plaza 16 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-142939534",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 62000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 62000,
+      "priceMax": 62000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/142939533/COLCHON-ESPUMA-NEW-BLACK-WHITE-1PZA-16CM-ALTO"
+    },
+    {
+      "id": "fal-147577613",
+      "handle": "colchon-colchoneta-espuma-summer-liso-1-plaza-d15x12-cm",
+      "title": "COLCHON COLCHONETA ESPUMA SUMMER LISO 1 plaza D15x12 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147577614_01",
+          "height": 874,
+          "width": 1292,
+          "alt": "COLCHON COLCHONETA ESPUMA SUMMER LISO 1 plaza D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147577614_02",
+          "height": 510,
+          "width": 652,
+          "alt": "COLCHON COLCHONETA ESPUMA SUMMER LISO 1 plaza D15x12 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147577614",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 50000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 50000,
+      "priceMax": 50000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147577613/COLCHON-COLCHONETA-ESPUMA-SUMMER-LISO-1P-D15X12CM"
+    },
+    {
+      "id": "fal-153979160",
+      "handle": "cama-alta-metal-luna-colchon-espuma-d18x12-cm-1-5-plazas",
+      "title": "CAMA ALTA METAL LUNA+COLCHON ESPUMA D18x12 cm 1.5 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153979161_01",
+          "height": 1455,
+          "width": 1600,
+          "alt": "CAMA ALTA METAL LUNA+COLCHON ESPUMA D18x12 cm 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153979161_02",
+          "height": 1377,
+          "width": 1325,
+          "alt": "CAMA ALTA METAL LUNA+COLCHON ESPUMA D18x12 cm 1.5 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-153979161",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 228990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 228990,
+      "priceMax": 228990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153979160/cama-alta-metal-lunacolchon-espuma-d18x12cm-1-5pza"
+    },
+    {
+      "id": "fal-147249222",
+      "handle": "camarote-studio-pucon-1-5-plazas-mostaza",
+      "title": "CAMAROTE STUDIO PUCON 1.5 plazas MOSTAZA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147249223_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE STUDIO PUCON 1.5 plazas MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147249223_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMAROTE STUDIO PUCON 1.5 plazas MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147249223_03",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMAROTE STUDIO PUCON 1.5 plazas MOSTAZA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147249223",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 299990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 299990,
+      "priceMax": 299990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147249222/CAMAROTE-STUDIO-PUCON-15PZA-MOSTAZA"
+    },
+    {
+      "id": "fal-147237695",
+      "handle": "camarote-studio-pucon-1-plaza-azul",
+      "title": "CAMAROTE STUDIO PUCON 1 plaza AZUL",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147237696_01",
+          "height": 1000,
+          "width": 1000,
+          "alt": "CAMAROTE STUDIO PUCON 1 plaza AZUL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147237696_02",
+          "height": 1000,
+          "width": 1000,
+          "alt": "CAMAROTE STUDIO PUCON 1 plaza AZUL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147237696_03",
+          "height": 1000,
+          "width": 1000,
+          "alt": "CAMAROTE STUDIO PUCON 1 plaza AZUL"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147237696",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 272990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 272990,
+      "priceMax": 272990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147237695/CAMAROTE-STUDIO-PUCON-1PZA-AZUL"
+    },
+    {
+      "id": "fal-140900231",
+      "handle": "colchon-espuma-acolchado-dormiland-super-d18x20-cm-alto-2-plazas",
+      "title": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 2 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900232_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900232_02",
+          "height": 759,
+          "width": 967,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900232_03",
+          "height": 1280,
+          "width": 848,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140900232_04",
+          "height": 1500,
+          "width": 1125,
+          "alt": "COLCHON ESPUMA ACOLCHADO DORMILAND SUPER D18x20 cm ALTO 2 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-140900232",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 99000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 99000,
+      "priceMax": 99000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/140900231/COLCHON-ESPUMA-ACOLCHADO-DORMILAND-SUPER-D18X20CM-ALTO-2PZA"
+    },
+    {
+      "id": "fal-145174594",
+      "handle": "base-de-cama-europea-2-plazas-grey",
+      "title": "BASE DE CAMA EUROPEA 2 plazas GREY",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["dormitorio", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/145174595_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "BASE DE CAMA EUROPEA 2 plazas GREY"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/145174595_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "BASE DE CAMA EUROPEA 2 plazas GREY"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-145174595",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 115990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 115990,
+      "priceMax": 115990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/145174594/BASE-DE-CAMA-EUROPEA-2PZA-GREY"
+    },
+    {
+      "id": "fal-153728539",
+      "handle": "sofa-isabel-2-cuerpos",
+      "title": "SOFA ISABEL 2 CUERPOS",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sofas", "sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153728540_01",
+          "height": 1200,
+          "width": 1600,
+          "alt": "SOFA ISABEL 2 CUERPOS"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153728540_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "SOFA ISABEL 2 CUERPOS"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153728540_03",
+          "height": 1177,
+          "width": 1280,
+          "alt": "SOFA ISABEL 2 CUERPOS"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153728540_04",
+          "height": 1104,
+          "width": 1187,
+          "alt": "SOFA ISABEL 2 CUERPOS"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Beige"]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fal-153728540",
+          "title": "Beige",
+          "options": ["Beige"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/153728540_01"
+        }
+      ],
+      "priceMin": 149990,
+      "priceMax": 149990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153728539/sofa-isabel-2-cuerpos"
+    },
+    {
+      "id": "fal-138863364",
+      "handle": "camarote-metalico-pegaso-1-5-plazas-2-colchones-espuma",
+      "title": "CAMAROTE METALICO PEGASO 1.5 plazas + 2 COLCHONES ESPUMA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863366_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO PEGASO 1.5 plazas + 2 COLCHONES ESPUMA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863366_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO PEGASO 1.5 plazas + 2 COLCHONES ESPUMA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863366_03",
+          "height": 691,
+          "width": 947,
+          "alt": "CAMAROTE METALICO PEGASO 1.5 plazas + 2 COLCHONES ESPUMA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138863366",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 255990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 255990,
+      "priceMax": 255990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138863364/CAMAROTE-METALICO-PEGASO-1.5PZA-+-2-COLCHONES-ESPUMA"
+    },
+    {
+      "id": "fal-157917561",
+      "handle": "sofa-cama-de-espuma-premium-dualis-190x105x44",
+      "title": "Sofá Cama de Espuma Premium Dualis 190x105x44",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sofas", "sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917568_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917568_02",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917568_03",
+          "height": 1086,
+          "width": 1448,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917562_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917563_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917564_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917565_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917566_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157917567_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x105x44"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Dorado", "Negro", "Gris claro", "Gris cemento", "Café", "Burdeos", "Beige"]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fal-157917562",
+          "title": "Dorado",
+          "options": ["Dorado"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157917562_01"
+        },
+        {
+          "id": "fal-157917563",
+          "title": "Negro",
+          "options": ["Negro"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157917563_01"
+        },
+        {
+          "id": "fal-157917564",
+          "title": "Gris claro",
+          "options": ["Gris claro"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157917564_01"
+        },
+        {
+          "id": "fal-157917565",
+          "title": "Gris cemento",
+          "options": ["Gris cemento"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157917565_01"
+        },
+        {
+          "id": "fal-157917566",
+          "title": "Café",
+          "options": ["Café"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157917566_01"
+        },
+        {
+          "id": "fal-157917567",
+          "title": "Burdeos",
+          "options": ["Burdeos"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157917567_01"
+        },
+        {
+          "id": "fal-157917568",
+          "title": "Beige",
+          "options": ["Beige"],
+          "price": 149990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157917568_01"
+        }
+      ],
+      "priceMin": 149990,
+      "priceMax": 149990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/157917561/sofa-cama-de-espuma-premium-dualis-190x105x44"
+    },
+    {
+      "id": "fal-142940212",
+      "handle": "colchon-espuma-new-black-white-1-5-plazas-16-cm-alto",
+      "title": "COLCHON ESPUMA NEW BLACK & WHITE 1.5 plazas 16 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/142940213_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 1.5 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/142940213_02",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 1.5 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/142940213_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON ESPUMA NEW BLACK & WHITE 1.5 plazas 16 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-142940213",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 75000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 75000,
+      "priceMax": 75000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/142940212/COLCHON-ESPUMA-NEW-BLACK-WHITE-1.5PZA-16CM-ALTO"
+    },
+    {
+      "id": "fal-138452153",
+      "handle": "colchon-clippper-espuma-liso-2-plazas-d21x20",
+      "title": "COLCHON CLIPPPER ESPUMA LISO 2 plazas D21x20",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138452154_01",
+          "height": 1008,
+          "width": 954,
+          "alt": "COLCHON CLIPPPER ESPUMA LISO 2 plazas D21x20"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138452154_02",
+          "height": 1094,
+          "width": 922,
+          "alt": "COLCHON CLIPPPER ESPUMA LISO 2 plazas D21x20"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138452154_03",
+          "height": 1213,
+          "width": 903,
+          "alt": "COLCHON CLIPPPER ESPUMA LISO 2 plazas D21x20"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138452154",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 140000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 140000,
+      "priceMax": 140000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138452153/COLCHON-CLIPPPER-ESPUMA-LISO-2P-D21X20"
+    },
+    {
+      "id": "fal-149991622",
+      "handle": "camarote-robust-1-plaza",
+      "title": "CAMAROTE ROBUST 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/149991623_01",
+          "height": 1452,
+          "width": 1600,
+          "alt": "CAMAROTE ROBUST 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/149991623_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMAROTE ROBUST 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/149991623_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE ROBUST 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/149991623_04",
+          "height": 1500,
+          "width": 1500,
+          "alt": "CAMAROTE ROBUST 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-149991623",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 385990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 385990,
+      "priceMax": 385990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/149991622/CAMAROTE-ROBUST-1PLAZA"
+    },
+    {
+      "id": "fal-151491747",
+      "handle": "banca-de-metal-marbella-blanca",
+      "title": "BANCA DE METAL MARBELLA BLANCA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/151491748_01",
+          "height": 850,
+          "width": 1276,
+          "alt": "BANCA DE METAL MARBELLA BLANCA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/151491748_02",
+          "height": 794,
+          "width": 1191,
+          "alt": "BANCA DE METAL MARBELLA BLANCA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/151491748_03",
+          "height": 926,
+          "width": 1389,
+          "alt": "BANCA DE METAL MARBELLA BLANCA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-151491748",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 269000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 269000,
+      "priceMax": 269000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/151491747/banca-de-metal-rustic-blanca"
+    },
+    {
+      "id": "fal-138438182",
+      "handle": "colchon-clipper-espuma-liso-1-plaza-d15x20-cm",
+      "title": "COLCHON CLIPPER ESPUMA LISO 1 plaza D15x20 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138438183_01",
+          "height": 1008,
+          "width": 954,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1 plaza D15x20 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138438183_02",
+          "height": 1094,
+          "width": 922,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1 plaza D15x20 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138438183_03",
+          "height": 1213,
+          "width": 903,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1 plaza D15x20 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138438183",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 72990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 72990,
+      "priceMax": 72990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138438182/COLCHON-CLIPPER-ESPUMA-LISO-1P-D15X20CM"
+    },
+    {
+      "id": "fal-138437879",
+      "handle": "colchon-clipper-espuma-liso-2-plazas-16-cm-alto",
+      "title": "COLCHON CLIPPER ESPUMA LISO 2 plazas 16 cm ALTO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138437880_01",
+          "height": 1200,
+          "width": 1600,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 2 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138437880_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 2 plazas 16 cm ALTO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138437880_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 2 plazas 16 cm ALTO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138437880",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 80990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 80990,
+      "priceMax": 80990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138437879/COLCHON-CLIPPER-ESPUMA-LISO-2P-16CM-ALTO"
+    },
+    {
+      "id": "fal-138443513",
+      "handle": "colchon-clipper-espuma-liso-1-5-plazas-d15x20-cm",
+      "title": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas D15x20 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443514_01",
+          "height": 1008,
+          "width": 954,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas D15x20 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443514_02",
+          "height": 1094,
+          "width": 922,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas D15x20 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138443514_03",
+          "height": 1213,
+          "width": 903,
+          "alt": "COLCHON CLIPPER ESPUMA LISO 1.5 plazas D15x20 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138443514",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 90000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 90000,
+      "priceMax": 90000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138443513/COLCHON-CLIPPER-ESPUMA-LISO-1.5P-D15X20CM"
+    },
+    {
+      "id": "fal-147572710",
+      "handle": "camarote-studio-luna-1-5-plazas-rojo-muebles",
+      "title": "CAMAROTE STUDIO LUNA 1.5 plazas ROJO + MUEBLES",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147572711_01",
+          "height": 1024,
+          "width": 758,
+          "alt": "CAMAROTE STUDIO LUNA 1.5 plazas ROJO + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147572711_02",
+          "height": 1010,
+          "width": 820,
+          "alt": "CAMAROTE STUDIO LUNA 1.5 plazas ROJO + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147572711_03",
+          "height": 1123,
+          "width": 1280,
+          "alt": "CAMAROTE STUDIO LUNA 1.5 plazas ROJO + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147572711_04",
+          "height": 1280,
+          "width": 1229,
+          "alt": "CAMAROTE STUDIO LUNA 1.5 plazas ROJO + MUEBLES"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147572711",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 353990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 353990,
+      "priceMax": 353990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147572710/CAMAROTE-STUDIO-LUNA-15PZA-ROJO-+-MUEBLES"
+    },
+    {
+      "id": "fal-147198170",
+      "handle": "sofa-futon-folk-1-plaza-azul",
+      "title": "SOFA FUTON FOLK 1 plaza AZUL",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147198171_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1 plaza AZUL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147198171_02",
+          "height": 814,
+          "width": 818,
+          "alt": "SOFA FUTON FOLK 1 plaza AZUL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147198171_03",
+          "height": 652,
+          "width": 790,
+          "alt": "SOFA FUTON FOLK 1 plaza AZUL"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147198171",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 177990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 177990,
+      "priceMax": 177990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147198170/SOFA-FUTON-FOLK-1PZA-AZUL"
+    },
+    {
+      "id": "fal-138335083",
+      "handle": "colchon-colchoneta-superfoam-espuma-estampado-2-plazas-d15x12-cm",
+      "title": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x12 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335084_01",
+          "height": 661,
+          "width": 953,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335084_02",
+          "height": 1129,
+          "width": 902,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x12 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138335084_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON COLCHONETA SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x12 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138335084",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 68990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 68990,
+      "priceMax": 68990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138335083/COLCHON-COLCHONETA-SUPERFOAM-ESPUMA-ESTAMPADO-2-PZA-D15-X-12CM"
+    },
+    {
+      "id": "fal-145179041",
+      "handle": "cama-europea-2-plazas-respaldo-colchon-resorte-grey",
+      "title": "CAMA EUROPEA 2 plazas+RESPALDO + COLCHON RESORTE GREY",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/145179042_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMA EUROPEA 2 plazas+RESPALDO + COLCHON RESORTE GREY"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/145179042_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMA EUROPEA 2 plazas+RESPALDO + COLCHON RESORTE GREY"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/145179042_03",
+          "height": 1200,
+          "width": 1600,
+          "alt": "CAMA EUROPEA 2 plazas+RESPALDO + COLCHON RESORTE GREY"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-145179042",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 260990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 260990,
+      "priceMax": 260990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/145179041/CAMA-EUROPEA-2PZA+RESPALDO-+-COLCHON-RESORTE-GREY"
+    },
+    {
+      "id": "fal-153950510",
+      "handle": "cama-rebeca-metal-1-plaza",
+      "title": "CAMA REBECA METAL 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["dormitorio", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/153950511_01",
+          "height": 1038,
+          "width": 1213,
+          "alt": "CAMA REBECA METAL 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153950511_02",
+          "height": 1075,
+          "width": 1165,
+          "alt": "CAMA REBECA METAL 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/153950511_03",
+          "height": 1422,
+          "width": 1293,
+          "alt": "CAMA REBECA METAL 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-153950511",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 92990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 92990,
+      "priceMax": 92990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/153950510/cama-rebeca-metal-1pza"
+    },
+    {
+      "id": "fal-147199006",
+      "handle": "sofa-futon-folk-1-5-plazas-verde",
+      "title": "SOFA FUTON FOLK 1.5 plazas VERDE",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199007_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas VERDE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199007_02",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas VERDE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199007_03",
+          "height": 768,
+          "width": 810,
+          "alt": "SOFA FUTON FOLK 1.5 plazas VERDE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199007_04",
+          "height": 776,
+          "width": 826,
+          "alt": "SOFA FUTON FOLK 1.5 plazas VERDE"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147199007",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 170990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 170990,
+      "priceMax": 170990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147199006/SOFA-FUTON-FOLK-15PZA-VERDE"
+    },
+    {
+      "id": "fal-151492748",
+      "handle": "banca-de-metal-marbella-beige",
+      "title": "BANCA DE METAL MARBELLA BEIGE",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/151492749_01",
+          "height": 793,
+          "width": 1191,
+          "alt": "BANCA DE METAL MARBELLA BEIGE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/151492749_02",
+          "height": 807,
+          "width": 1106,
+          "alt": "BANCA DE METAL MARBELLA BEIGE"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-151492749",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 269000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 269000,
+      "priceMax": 269000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/151492748/banca-de-metal-rustic-beige"
+    },
+    {
+      "id": "fal-157918737",
+      "handle": "sofa-cama-de-espuma-premium-dualis-190x130x44",
+      "title": "Sofá Cama de Espuma Premium Dualis 190x130x44",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sofas", "sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918738_01",
+          "height": 1331,
+          "width": 1182,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918738_02",
+          "height": 1374,
+          "width": 1145,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918738_03",
+          "height": 1500,
+          "width": 1288,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918739_01",
+          "height": 1323,
+          "width": 1189,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918740_01",
+          "height": 1317,
+          "width": 1194,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918741_01",
+          "height": 1331,
+          "width": 1182,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918742_01",
+          "height": 1324,
+          "width": 1188,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918743_01",
+          "height": 1324,
+          "width": 1188,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157918744_01",
+          "height": 1333,
+          "width": 1180,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x130x44"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Gris claro", "Burdeos", "Gris cemento", "Café", "Beige", "Dorado", "Negro"]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fal-157918738",
+          "title": "Gris claro",
+          "options": ["Gris claro"],
+          "price": 181990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157918738_01"
+        },
+        {
+          "id": "fal-157918739",
+          "title": "Burdeos",
+          "options": ["Burdeos"],
+          "price": 181990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157918739_01"
+        },
+        {
+          "id": "fal-157918740",
+          "title": "Gris cemento",
+          "options": ["Gris cemento"],
+          "price": 181990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157918740_01"
+        },
+        {
+          "id": "fal-157918741",
+          "title": "Café",
+          "options": ["Café"],
+          "price": 181990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157918741_01"
+        },
+        {
+          "id": "fal-157918742",
+          "title": "Beige",
+          "options": ["Beige"],
+          "price": 181990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157918742_01"
+        },
+        {
+          "id": "fal-157918743",
+          "title": "Dorado",
+          "options": ["Dorado"],
+          "price": 181990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157918743_01"
+        },
+        {
+          "id": "fal-157918744",
+          "title": "Negro",
+          "options": ["Negro"],
+          "price": 181990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157918744_01"
+        }
+      ],
+      "priceMin": 181990,
+      "priceMax": 181990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/157918737/sofa-cama-de-espuma-premium-dualis-190x130x44"
+    },
+    {
+      "id": "fal-157909075",
+      "handle": "sofa-cama-de-espuma-premium-dualis-190x65x44",
+      "title": "Sofá Cama de Espuma Premium Dualis 190x65x44",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sofas", "sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909078_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909078_02",
+          "height": 1086,
+          "width": 1448,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909078_03",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909076_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909077_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909079_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909080_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909081_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/157909082_01",
+          "height": 1448,
+          "width": 1086,
+          "alt": "Sofá Cama de Espuma Premium Dualis 190x65x44"
+        }
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "values": ["Beige", "Negro", "Dorado", "Gris claro", "Burdeos", "Café", "Gris cemento"]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fal-157909076",
+          "title": "Beige",
+          "options": ["Beige"],
+          "price": 109990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157909076_01"
+        },
+        {
+          "id": "fal-157909077",
+          "title": "Negro",
+          "options": ["Negro"],
+          "price": 109990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157909077_01"
+        },
+        {
+          "id": "fal-157909078",
+          "title": "Dorado",
+          "options": ["Dorado"],
+          "price": 109990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157909078_01"
+        },
+        {
+          "id": "fal-157909079",
+          "title": "Gris claro",
+          "options": ["Gris claro"],
+          "price": 109990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157909079_01"
+        },
+        {
+          "id": "fal-157909080",
+          "title": "Burdeos",
+          "options": ["Burdeos"],
+          "price": 109990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157909080_01"
+        },
+        {
+          "id": "fal-157909081",
+          "title": "Café",
+          "options": ["Café"],
+          "price": 109990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157909081_01"
+        },
+        {
+          "id": "fal-157909082",
+          "title": "Gris cemento",
+          "options": ["Gris cemento"],
+          "price": 109990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": "https://media.falabella.com/falabellaCL/157909082_01"
+        }
+      ],
+      "priceMin": 109990,
+      "priceMax": 109990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/157909075/sofa-cama-de-espuma-premium-dualis-190x65x44"
+    },
+    {
+      "id": "fal-144610682",
+      "handle": "sofa-cama-espuma-plegable-royal-grey-190x127x36-cm",
+      "title": "SOFA CAMA ESPUMA PLEGABLE ROYAL GREY 190x127x36 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sofas", "sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/144610683_01",
+          "height": 1200,
+          "width": 1600,
+          "alt": "SOFA CAMA ESPUMA PLEGABLE ROYAL GREY 190x127x36 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/144610683_02",
+          "height": 1200,
+          "width": 1600,
+          "alt": "SOFA CAMA ESPUMA PLEGABLE ROYAL GREY 190x127x36 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/144610683_03",
+          "height": 1200,
+          "width": 1600,
+          "alt": "SOFA CAMA ESPUMA PLEGABLE ROYAL GREY 190x127x36 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/144610683_04",
+          "height": 1200,
+          "width": 1600,
+          "alt": "SOFA CAMA ESPUMA PLEGABLE ROYAL GREY 190x127x36 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/144610683_05",
+          "height": 1500,
+          "width": 1125,
+          "alt": "SOFA CAMA ESPUMA PLEGABLE ROYAL GREY 190x127x36 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-144610683",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 274990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 274990,
+      "priceMax": 274990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/144610682/SOFA-CAMA-ESPUMA-PLEGABLE-ROYAL-GREY-190X127X36-CM"
+    },
+    {
+      "id": "fal-147215578",
+      "handle": "sofa-futon-folk-1-5-plazas-mostaza",
+      "title": "SOFA FUTON FOLK 1.5 plazas MOSTAZA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215579_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215579_02",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215579_03",
+          "height": 746,
+          "width": 818,
+          "alt": "SOFA FUTON FOLK 1.5 plazas MOSTAZA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147215579_04",
+          "height": 744,
+          "width": 816,
+          "alt": "SOFA FUTON FOLK 1.5 plazas MOSTAZA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147215579",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 170990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 170990,
+      "priceMax": 170990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147215578/SOFA-FUTON-FOLK-15PZA-MOSTAZA"
+    },
+    {
+      "id": "fal-147576880",
+      "handle": "camarote-studio-metal-luna-1-plaza-rojo-muebles",
+      "title": "CAMAROTE STUDIO METAL LUNA 1 plaza ROJO + MUEBLES",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576881_01",
+          "height": 1010,
+          "width": 820,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza ROJO + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576881_02",
+          "height": 880,
+          "width": 948,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza ROJO + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576881_03",
+          "height": 1123,
+          "width": 1280,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza ROJO + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576881_04",
+          "height": 1280,
+          "width": 1229,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza ROJO + MUEBLES"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147576881",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 337990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 337990,
+      "priceMax": 337990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147576880/CAMAROTE-STUDIO-METAL-LUNA-1PZA-ROJO-+-MUEBLES"
+    },
+    {
+      "id": "fal-140232072",
+      "handle": "catre-clinico-3-posiciones-first-1-5-plazas",
+      "title": "CATRE CLINICO 3 POSICIONES FIRST 1.5 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["dormitorio", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/140232073_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "CATRE CLINICO 3 POSICIONES FIRST 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140232073_02",
+          "height": 960,
+          "width": 1280,
+          "alt": "CATRE CLINICO 3 POSICIONES FIRST 1.5 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140232073_03",
+          "height": 960,
+          "width": 1280,
+          "alt": "CATRE CLINICO 3 POSICIONES FIRST 1.5 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-140232073",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 269990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 269990,
+      "priceMax": 269990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/140232072/CATRE-CLINICO-3-POSICIONES-FIRST-1.5PZA"
+    },
+    {
+      "id": "fal-150218176",
+      "handle": "cama-nido-strong-colchon-espuma-d15x12-cm-1-plaza",
+      "title": "CAMA NIDO STRONG +COLCHON ESPUMA D15x12 cm 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/150218177_01",
+          "height": 1021,
+          "width": 1599,
+          "alt": "CAMA NIDO STRONG +COLCHON ESPUMA D15x12 cm 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/150218177_02",
+          "height": 1099,
+          "width": 1600,
+          "alt": "CAMA NIDO STRONG +COLCHON ESPUMA D15x12 cm 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/150218177_03",
+          "height": 1004,
+          "width": 1600,
+          "alt": "CAMA NIDO STRONG +COLCHON ESPUMA D15x12 cm 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-150218177",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 131990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 131990,
+      "priceMax": 131990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/150218176/cama-nido-strong-colchon-espuma-d15-x12cm-1-pza"
+    },
+    {
+      "id": "fal-147238488",
+      "handle": "camarote-studio-pucon-1-5-plazas-rojo",
+      "title": "CAMAROTE STUDIO PUCON 1.5 plazas ROJO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147238489_01",
+          "height": 630,
+          "width": 768,
+          "alt": "CAMAROTE STUDIO PUCON 1.5 plazas ROJO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147238489_02",
+          "height": 1174,
+          "width": 1284,
+          "alt": "CAMAROTE STUDIO PUCON 1.5 plazas ROJO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147238489",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 299990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 299990,
+      "priceMax": 299990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147238488/CAMAROTE-STUDIO-PUCON-1.5PZA-ROJO"
+    },
+    {
+      "id": "fal-140232070",
+      "handle": "catre-clinico-3-posiciones-first-1-plaza",
+      "title": "CATRE CLINICO 3 POSICIONES FIRST 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["dormitorio", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/140232071_01",
+          "height": 960,
+          "width": 1280,
+          "alt": "CATRE CLINICO 3 POSICIONES FIRST 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140232071_02",
+          "height": 960,
+          "width": 1280,
+          "alt": "CATRE CLINICO 3 POSICIONES FIRST 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/140232071_03",
+          "height": 960,
+          "width": 1280,
+          "alt": "CATRE CLINICO 3 POSICIONES FIRST 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-140232071",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 248990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 248990,
+      "priceMax": 248990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/140232070/CATRE-CLINICO-3-POSICIONES-FIRST-1PZA"
+    },
+    {
+      "id": "fal-138338766",
+      "handle": "colchon-superfoam-espuma-estampado-2-plazas-d15x15-cm",
+      "title": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x15 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338767_01",
+          "height": 661,
+          "width": 953,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x15 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338767_02",
+          "height": 1129,
+          "width": 902,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x15 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338767_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 2 plazas D15x15 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138338767",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 77990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 77990,
+      "priceMax": 77990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138338766/COLCHON-SUPERFOAM-ESPUMA-ESTAMPADO-2PZA-D15-X-15CM"
+    },
+    {
+      "id": "fal-147576247",
+      "handle": "camarote-studio-metal-luna-1-5-plazas-pistacho",
+      "title": "CAMAROTE STUDIO METAL LUNA 1.5 plazas PISTACHO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576248_01",
+          "height": 878,
+          "width": 942,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1.5 plazas PISTACHO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576248_02",
+          "height": 852,
+          "width": 992,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1.5 plazas PISTACHO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576248_03",
+          "height": 1123,
+          "width": 1280,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1.5 plazas PISTACHO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147576248_04",
+          "height": 1280,
+          "width": 1229,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1.5 plazas PISTACHO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147576248",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 337990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 337990,
+      "priceMax": 337990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147576247/CAMAROTE-STUDIO-METAL-LUNA-15PZA-PISTACHO"
+    },
+    {
+      "id": "fal-138338645",
+      "handle": "colchon-superfoam-espuma-estampado-1-5-plazas-d15x15-cm",
+      "title": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x15 cm",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338646_01",
+          "height": 661,
+          "width": 953,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x15 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338646_02",
+          "height": 1129,
+          "width": 902,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x15 cm"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138338646_03",
+          "height": 1280,
+          "width": 960,
+          "alt": "COLCHON SUPERFOAM ESPUMA ESTAMPADO 1.5 plazas D15x15 cm"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138338646",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 56990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 56990,
+      "priceMax": 56990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138338645/COLCHON-SUPERFOAM-ESPUMA-ESTAMPADO-1.5-PZA-D15-X-15CM"
+    },
+    {
+      "id": "fal-147198567",
+      "handle": "sofa-futon-folk-1-5-plazas-azul",
+      "title": "SOFA FUTON FOLK 1.5 plazas AZUL",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147198569_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas AZUL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147198569_02",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas AZUL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147198569_03",
+          "height": 814,
+          "width": 818,
+          "alt": "SOFA FUTON FOLK 1.5 plazas AZUL"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147198569_04",
+          "height": 652,
+          "width": 790,
+          "alt": "SOFA FUTON FOLK 1.5 plazas AZUL"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147198569",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 170990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 170990,
+      "priceMax": 170990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147198567/SOFA-FUTON-FOLK-15PZA-AZUL"
+    },
+    {
+      "id": "fal-147199265",
+      "handle": "sofa-futon-folk-1-5-plazas-negro",
+      "title": "SOFA FUTON FOLK 1.5 plazas NEGRO",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["futones", "sala-de-estar"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199266_01",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas NEGRO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199266_02",
+          "height": 928,
+          "width": 1120,
+          "alt": "SOFA FUTON FOLK 1.5 plazas NEGRO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199266_03",
+          "height": 800,
+          "width": 826,
+          "alt": "SOFA FUTON FOLK 1.5 plazas NEGRO"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147199266_04",
+          "height": 746,
+          "width": 848,
+          "alt": "SOFA FUTON FOLK 1.5 plazas NEGRO"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147199266",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 170990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 170990,
+      "priceMax": 170990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147199265/SOFA-FUTON-FOLK-15PZA-NEGRO"
+    },
+    {
+      "id": "fal-151490287",
+      "handle": "banca-de-metal-marbella-negra",
+      "title": "BANCA DE METAL MARBELLA NEGRA",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["sala-de-estar"],
+      "sizes": [],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/151490288_01",
+          "height": 850,
+          "width": 1276,
+          "alt": "BANCA DE METAL MARBELLA NEGRA"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/151490288_02",
+          "height": 888,
+          "width": 1332,
+          "alt": "BANCA DE METAL MARBELLA NEGRA"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-151490288",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 269000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 269000,
+      "priceMax": 269000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/151490287/banca-de-metal-rustic"
+    },
+    {
+      "id": "fal-147242857",
+      "handle": "camarote-studio-pucon-1-plaza-chocolate",
+      "title": "CAMAROTE STUDIO PUCON 1 plaza CHOCOLATE",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147242858_01",
+          "height": 902,
+          "width": 1114,
+          "alt": "CAMAROTE STUDIO PUCON 1 plaza CHOCOLATE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147242858_02",
+          "height": 1236,
+          "width": 1226,
+          "alt": "CAMAROTE STUDIO PUCON 1 plaza CHOCOLATE"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147242858_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE STUDIO PUCON 1 plaza CHOCOLATE"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147242858",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 272990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 272990,
+      "priceMax": 272990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147242857/CAMAROTE-STUDIO-PUCON-1PZA-CHOCOLATE"
+    },
+    {
+      "id": "fal-147575269",
+      "handle": "camarote-studio-metal-luna-1-plaza-chocolate-muebles",
+      "title": "CAMAROTE STUDIO METAL LUNA 1 plaza CHOCOLATE + MUEBLES",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147575270_01",
+          "height": 752,
+          "width": 872,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza CHOCOLATE + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147575270_02",
+          "height": 796,
+          "width": 726,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza CHOCOLATE + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147575270_03",
+          "height": 1123,
+          "width": 1280,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza CHOCOLATE + MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147575270_04",
+          "height": 1280,
+          "width": 1229,
+          "alt": "CAMAROTE STUDIO METAL LUNA 1 plaza CHOCOLATE + MUEBLES"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147575270",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 337990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 337990,
+      "priceMax": 337990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147575269/CAMAROTE-STUDIO-,METAL-LUNA-1PZA-CHOCOLATE-+-MUEBLES"
+    },
+    {
+      "id": "fal-138863359",
+      "handle": "camarote-metalico-milan-1-plaza",
+      "title": "CAMAROTE METALICO MILAN 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863360_01",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863360_02",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/138863360_03",
+          "height": 1500,
+          "width": 1125,
+          "alt": "CAMAROTE METALICO MILAN 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-138863360",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 134990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 134990,
+      "priceMax": 134990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/138863359/CAMAROTE-METALICO-PEGASO-1-PZA"
+    },
+    {
+      "id": "fal-150219146",
+      "handle": "cama-nido-resistant-colchon-espuma-d15x12-cm-1-plaza",
+      "title": "CAMA NIDO RESISTANT +COLCHON ESPUMA D15x12 cm 1 plaza",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["colchones", "dormitorio-1"],
+      "sizes": ["1 plaza"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/150219147_01",
+          "height": 1283,
+          "width": 1600,
+          "alt": "CAMA NIDO RESISTANT +COLCHON ESPUMA D15x12 cm 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/150219147_02",
+          "height": 1150,
+          "width": 1600,
+          "alt": "CAMA NIDO RESISTANT +COLCHON ESPUMA D15x12 cm 1 plaza"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/150219147_03",
+          "height": 878,
+          "width": 1600,
+          "alt": "CAMA NIDO RESISTANT +COLCHON ESPUMA D15x12 cm 1 plaza"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-150219147",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 199000,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 199000,
+      "priceMax": 199000,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/150219146/cama-nido-resistant-colchon-espuma-d15x12cm-1pza"
+    },
+    {
+      "id": "fal-156717920",
+      "handle": "cama-metal-esencia-blanca-2-plazas",
+      "title": "CAMA METAL ESENCIA BLANCA 2 plazas",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["dormitorio", "dormitorio-1"],
+      "sizes": ["2 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/156717921_01",
+          "height": 896,
+          "width": 1195,
+          "alt": "CAMA METAL ESENCIA BLANCA 2 plazas"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/156717921_02",
+          "height": 896,
+          "width": 1195,
+          "alt": "CAMA METAL ESENCIA BLANCA 2 plazas"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-156717921",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 265990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 265990,
+      "priceMax": 265990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/156717920/cama-metal-esencia-blanca-2pzas"
+    },
+    {
+      "id": "fal-147574318",
+      "handle": "camarote-studio-luna-1-5-plazas-negro-muebles",
+      "title": "CAMAROTE STUDIO LUNA 1.5 plazas NEGRO+ MUEBLES",
+      "descriptionHtml": "",
+      "description": "",
+      "vendor": "Recutex",
+      "type": null,
+      "tags": ["falabella"],
+      "collections": ["camarotes", "dormitorio-1"],
+      "sizes": ["1.5 plazas"],
+      "images": [
+        {
+          "src": "https://media.falabella.com/falabellaCL/147574319_01",
+          "height": 882,
+          "width": 994,
+          "alt": "CAMAROTE STUDIO LUNA 1.5 plazas NEGRO+ MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147574319_02",
+          "height": 1123,
+          "width": 1280,
+          "alt": "CAMAROTE STUDIO LUNA 1.5 plazas NEGRO+ MUEBLES"
+        },
+        {
+          "src": "https://media.falabella.com/falabellaCL/147574319_03",
+          "height": 1280,
+          "width": 1229,
+          "alt": "CAMAROTE STUDIO LUNA 1.5 plazas NEGRO+ MUEBLES"
+        }
+      ],
+      "options": [],
+      "variants": [
+        {
+          "id": "fal-147574319",
+          "title": "Default Title",
+          "options": ["Default Title"],
+          "price": 353990,
+          "compareAtPrice": null,
+          "available": true,
+          "sku": null,
+          "image": null
+        }
+      ],
+      "priceMin": 353990,
+      "priceMax": 353990,
+      "available": true,
+      "onSale": false,
+      "createdAt": "2026-09-27T16:37:34.156Z",
+      "source": "https://www.falabella.com/falabella-cl/product/147574318/CAMAROTE-STUDIO-LUNA-15PZA-NEGRO+-MUEBLES"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+@import './styles/base.css';
+@import './styles/component-header.css';
+@import './styles/component-overlays.css';
+@import './styles/component-footer.css';
+@import './styles/section-hero.css';
+@import './styles/section-home.css';
+@import './styles/section-product.css';
+@import './styles/section-collection.css';
+@import './styles/section-pages.css';
+@import './styles/checkout.css';
