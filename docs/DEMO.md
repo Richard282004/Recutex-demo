@@ -1,129 +1,55 @@
-# Demo comercial — RECUTEX 2.0
+# Demo para Recutex
 
-Objetivo: mostrar a Recutex el nuevo theme funcionando **con su catálogo real**, sin tocar su tienda.
+## Qué mostrar (15 minutos)
 
-La demo corre en una **tienda de desarrollo propia** (gratis, protegida con contraseña). El catálogo se copia desde el storefront público de Recutex (solo lectura). Al cerrar el proyecto, el theme se entrega con `shopify theme push` a la tienda real de Recutex, que ya tiene los mismos handles de colección.
+1. **Home en celular y computador**: hero de marca con las franjas del logo, categorías con conteo real, ofertas reales (5 productos con precio rebajado en su catálogo), historia de la empresa.
+2. **Mega menú** (Dormitorio, Living) y **búsqueda predictiva**: escribir "camarote" o "colchón".
+3. **Colección con filtros**: Colchones → filtrar por medida (1 plaza … Super King) y precio, sin recargar. El link se puede compartir.
+4. **Ficha de producto**: galería deslizable con zoom, variantes, "Comprar ahora", consulta por WhatsApp con el nombre del producto.
+5. **Carrito lateral → Checkout → Webpay** (ambiente de prueba de Transbank) → comprobante con orden, monto y código de autorización.
+6. **Argumento económico**: sin mensualidad de plataforma ni comisión extra por venta; solo hosting y la comisión de Transbank. Ver `docs/ARCHITECTURE.md` (incluye los costos que asume el proyecto).
 
-```text
-recutex.myshopify.com (solo lectura: /products.json)
-        │  npm run demo:catalog
-        ▼
-demo/products.csv ──► Admin demo → Productos → Importar
-                                   │
-npm run demo:seed ────────────────►│ colecciones automáticas, páginas, menús
-                                   │
-shopify theme dev / push ─────────►│ theme RECUTEX 2.0
-                                   ▼
-                     https://<tu-demo>.myshopify.com  (contraseña)
-```
+## Cómo compartir la demo
 
-## 1. Crear la tienda de desarrollo (≈5 min)
+- Local: `npm run dev` y abrir http://localhost:3000.
+- Online: deploy en Vercel (preview privado) con `WEBPAY_ENV=integration`. `robots.txt` bloquea la indexación mientras `ALLOW_INDEXING` no sea `true`.
 
-1. Entrar a [partners.shopify.com](https://partners.shopify.com) (crear cuenta Partner si no existe; es gratis).
-2. **Tiendas → Agregar tienda → Tienda de desarrollo** → "Crear tienda para probar y construir".
-3. Nombre: `Recutex` (el nombre aparece en el header si no hay logo). País: Chile. Moneda: **CLP**.
-4. En la tienda: **Configuración → Idiomas** → español como idioma predeterminado.
+## Datos usados y su fuente
 
-## 2. Importar el catálogo
+Todo texto comercial proviene de la tienda pública actual. Validar con Recutex antes de producción:
 
-```bash
-make demo-catalog          # genera demo/products.csv (79 productos, imágenes incluidas por URL)
-```
+| Dato                                                       | Fuente                                                                        |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| "Más de 30 años"                                           | Página "Historia de la empresa" dice 34 años (fecha de redacción desconocida) |
+| 3 meses de garantía en muebles                             | /pages/devolucion-y-garantia                                                  |
+| Plazos de despacho 20 / 25 días hábiles                    | /pages/consultas-frecuentes                                                   |
+| Horario, dirección, teléfono, email, WhatsApp              | /pages/consultas-frecuentes y header del sitio                                |
+| "Te contactaremos para coordinar el despacho" (tras pagar) | Supuesto de la demo: **definir proceso real**                                 |
+| Costo de despacho                                          | **No publicado**: la demo lo muestra como "por confirmar"                     |
+| RUT de Recutex Limitada                                    | **No publicado**: requerido en términos y política de privacidad              |
+| Teléfono                                                   | Términos actuales dicen 02 772 3227; header y FAQ dicen 2 3278 1476           |
+| Plazo de despacho                                          | Política de envíos de Shopify dice 10–20 días hábiles; FAQ dice 20/25         |
 
-Admin demo → **Productos → Importar** → subir `demo/products.csv`. Shopify descarga las imágenes desde las URLs; tarda unos minutos.
+## Textos legales (borradores)
 
-El CSV agrega tags `col-<handle>` (pertenencia a colección original) y `oferta` (productos con precio de comparación real). No se inventa ningún precio ni descuento.
+`/pages/terminos-y-condiciones`, `/pages/politica-de-privacidad` y `/pages/devolucion-y-garantia` son borradores basados en los textos actuales de Recutex, ajustados a la Ley 19.496, el Reglamento de Comercio Electrónico (DS 6/2021) y la Ley 21.719 de datos personales (vigente desde el 1 de diciembre de 2026). Muestran un aviso de borrador hasta que Recutex y un abogado los validen (`draft` en `src/content/site.ts`). El checkout exige aceptarlos (Ley 19.496, art. 12 A).
 
-## 3. Colecciones, páginas y menús
+Cambios respecto de la tienda actual que Recutex debe decidir:
 
-### Opción A — automático (recomendado)
+- **Garantía**: la tienda publica 3 meses; la garantía legal es de 6 meses desde la Ley 21.398. La demo muestra 6 meses.
+- **Retracto en ofertas**: la tienda actual excluye productos en oferta de cambios y devoluciones. Una exclusión del retracto debe informarse expresamente antes de la compra; la demo no la aplica hasta que Recutex la defina.
+- **Gastos de envío en garantía y retracto**: los términos actuales los cargan al cliente. Validar con el abogado; la demo no lo afirma.
+- **Arbitraje**: los términos actuales imponen arbitraje; se eliminó por ser dudoso frente a consumidores.
+- **Cookies**: no se agregó banner porque el sitio no usa cookies de analítica ni publicidad (el carrito usa almacenamiento local, necesario para comprar). Si se agrega analítica, primero consentimiento.
 
-1. Admin demo → **Configuración → Apps y canales de venta → Desarrollar apps** → Crear app `demo-seed`.
-   - Si el admin indica que las apps personalizadas se crean desde el **Dev Dashboard**, crear la app allí e instalarla en la tienda demo.
-2. Scopes de Admin API: `write_products`, `read_products`, `write_online_store_navigation`, `read_online_store_navigation`, `write_online_store_pages`, `read_online_store_pages`, `write_publications`, `read_publications`.
-3. Instalar la app y copiar el **Admin API access token** (`shpat_…`).
-4. En `.env`:
-   ```env
-   SHOPIFY_DEMO_STORE=<tu-demo>.myshopify.com
-   SHOPIFY_ADMIN_TOKEN=shpat_...
-   ```
-5. `make demo-seed`
+## Limitaciones conocidas
 
-El script crea 12 colecciones automáticas con los handles originales, 3 páginas con textos del sitio actual y los menús `main-menu` y `footer`. Si alguna colección o página ya existe, la deja como está. **Se niega a correr contra `recutex.myshopify.com`.**
-
-### Opción B — manual
-
-Crear colecciones **automatizadas** con la condición "Etiqueta del producto es igual a …" y ajustar el handle en "Edición del SEO del sitio web":
-
-| Handle        | Título            | Condición                                                                 |
-| ------------- | ----------------- | ------------------------------------------------------------------------- |
-| colchones     | Colchones         | tag `col-colchones`                                                       |
-| dormitorio    | Camas             | tag `col-dormitorio`                                                      |
-| dormitorio-1  | Dormitorio        | tag `col-dormitorio-1`                                                    |
-| camarotes     | Camarotes         | tag `col-camarotes`                                                       |
-| comedores     | Comedores         | tag `col-comedores`                                                       |
-| sofas         | Sofás             | tag `col-sofas`                                                           |
-| sillon-futon  | Sillón futón      | tag `col-sillon-futon`                                                    |
-| futones       | Futones           | tag `col-futones`                                                         |
-| espuma        | Láminas de espuma | tag `col-espuma`                                                          |
-| home          | Destacados        | tag `col-home`                                                            |
-| ofertas       | Ofertas           | tag `oferta`                                                              |
-| sala-de-estar | Living            | cualquier condición: tag `col-sofas` / `col-sillon-futon` / `col-futones` |
-
-Páginas (contenido en `demo/pages/*.html`): `nosotros`, `devolucion-y-garantia`, `consultas-frecuentes`.
-
-Menú `main-menu`: Dormitorio (Colchones [Resortes, Espuma], Camas, Camarotes) · Living (Sofás, Sillón futón, Futones) · Comedores · Espumas · Ofertas · Nosotros. Ver la estructura exacta en `scripts/demo/seed-store.mjs`.
-
-## 4. Filtros de colección
-
-Instalar la app gratuita **Shopify Search & Discovery** en la tienda demo → Filtros → agregar _Disponibilidad_, _Precio_ y _Tipo de producto_. El theme muestra automáticamente los filtros configurados.
-
-## 5. Subir el theme
-
-```bash
-# .env: SHOPIFY_FLAG_STORE=<tu-demo>.myshopify.com
-make dev            # desarrollo con hot reload + link de preview compartible
-```
-
-Para la presentación, el theme debe quedar **publicado en la tienda demo** (no en la de Recutex):
-
-```bash
-make shell
-shopify theme push --path theme --unpublished --theme "Recutex 2.0"
-```
-
-Luego en el admin **de la tienda demo**: Tienda online → Temas → Recutex 2.0 → Publicar.
-
-## 6. Ajustes finales en el Theme Editor
-
-- **Logo**: subir el logo en alta resolución (el actual del sitio es de 126 px de ancho; pedir el original a Recutex). Sin logo, el header muestra el nombre de la tienda con la tipografía de marca.
-- **Hero**: usa por defecto la foto de la "Cama Base Europea 2 plazas". Con fotografía de ambiente profesional, cambiar el diseño a "Imagen a pantalla completa".
-- WhatsApp, teléfono y email ya vienen configurados con los datos públicos de Recutex (Configuración del tema → Contacto).
-
-## 7. Compartir la demo
-
-Tienda online → Preferencias → **Contraseña**: la tienda de desarrollo siempre está protegida. Compartir URL + contraseña con Recutex. El checkout funciona en modo prueba (Shopify Payments en modo test o "Bogus Gateway"), así que se puede mostrar el flujo completo carrito → checkout sin cobrar.
-
-## Qué mostrar en la reunión
-
-1. Home en móvil y desktop: hero, categorías, ofertas reales, storytelling de marca.
-2. Mega menú y búsqueda predictiva ("colchón", "camarote").
-3. Colección con filtros sin recargar la página.
-4. Ficha de producto: galería con zoom y swipe, selector de variantes, WhatsApp con el nombre del producto.
-5. Agregar al carrito → carrito lateral → checkout de Shopify.
-6. Theme Editor: cambiar un banner sin programar.
-
-## Datos a validar con Recutex antes de producción
-
-| Dato usado en la demo                         | Fuente                                                                        |
-| --------------------------------------------- | ----------------------------------------------------------------------------- |
-| "Más de 30 años"                              | Página "Historia de la empresa" dice 34 años (fecha de redacción desconocida) |
-| 3 meses de garantía en muebles                | /pages/devolucion-y-garantia                                                  |
-| Plazos de despacho 20 / 25 días hábiles       | /pages/consultas-frecuentes                                                   |
-| Horario, dirección, teléfono, email, WhatsApp | /pages/consultas-frecuentes y header del sitio                                |
-
-## Limitaciones conocidas de la demo
-
-- La calidad de las fotos es la del catálogo actual (varias con marca de agua o texto incrustado). Es el mayor salto visual pendiente.
-- Opciones de variante inconsistentes en el catálogo (`Color`/`COLOR`, `Talla`/`Size`), heredadas del origen.
-- Sin reviews, cuotas ni favoritos: no existen datos reales para ellos y el theme no los inventa.
+- **Sin admin todavía**: productos y textos se editan en archivos (fase 9: Payload CMS).
+- **Pedidos no se guardan**: el pago se confirma con Transbank, pero no hay base de datos de pedidos ni emails (fase 10).
+- **Newsletter**: valida el email pero no lo guarda (lo indica en pantalla).
+- **Catálogo**: 79 productos vienen de la tienda Shopify de Recutex y 80 de las publicaciones que Recutex tiene como vendedor en Falabella. Las 111 publicaciones de Falabella están en la demo: 80 como productos nuevos y 31 dentro de un producto que ya existía (misma línea en otra medida o color) (`data/falabella-products.json`, `npm run falabella:snapshot`). Las publicaciones de Falabella que corresponden a un producto ya existente no se duplican (lista `EXISTING` del script).
+  - **Precios** de los productos de Falabella: el precio vigente allí, que puede diferir del precio en la tienda propia (ej. Colchón Constellation 1.5: $179.000 en Falabella, $151.200 en Shopify). **Validar con Recutex.** El "precio normal" tachado de Falabella no se usa como descuento.
+  - **Sin descripción**: las fichas de Falabella bloquean el acceso automatizado, así que solo se usan nombre, precio, fotos y colores del listado público.
+  - **Stock**: se asume disponible si Falabella permite comprarlo.
+- **Fotos**: 19 productos de Shopify usan las fotos más nuevas de Falabella (hasta 1.300 px, sin marca de agua), revisadas una a una. Todas las fotos se descargan a `storage/media` con `npm run db:seed` y la app las sirve en `/media` (optimizadas a AVIF/WebP por Next.js): la demo ya no depende de los CDN de Shopify ni Falabella. En producción conviene moverlas a almacenamiento de objetos (S3, R2 o Vercel Blob) y pedir a Recutex los originales.
+- Opciones de variante inconsistentes en el origen (`Color`/`COLOR`, `Talla`/`Size`).

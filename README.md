@@ -1,138 +1,106 @@
 # RECUTEX 2.0 — Storefront
 
-Theme Shopify (Online Store 2.0) propio para [recutex.myshopify.com](https://recutex.myshopify.com), con un entorno de desarrollo reproducible en Docker.
+Tienda online propia para Recutex en **Next.js**, sin plataforma SaaS. Pagos con **Webpay Plus (Transbank)**.
 
-- **Shopify** sigue manejando catálogo, precios, inventario, descuentos, clientes, pedidos, checkout y pagos.
-- **Este repo** contiene el theme (`theme/`) y las herramientas para desarrollarlo.
-- Nada de este repo publica en producción. La publicación es manual y requiere aprobación.
+Esta versión es una **demo comercial**: usa el catálogo real publicado en la tienda actual (snapshot de solo lectura) y Webpay en ambiente de **integración** (sin cobros reales).
 
-Más detalle: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) (arquitectura, decisiones, fases, riesgos) y [`docs/AUDIT.md`](docs/AUDIT.md) (auditoría de la tienda actual).
+- Arquitectura, decisiones, fases y riesgos: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+- Auditoría de la tienda actual: [`docs/AUDIT.md`](docs/AUDIT.md)
+- Guion y datos a validar para la presentación: [`docs/DEMO.md`](docs/DEMO.md)
 
 ## Requisitos
 
-- Docker Desktop (o Docker Engine + Compose v2.24+)
+- Docker Desktop, **o** Node.js 22.12+ (recomendado 24 LTS)
 - Git
-- Acceso a la tienda: cuenta de staff/colaborador con permiso de **Themes**, o una contraseña de la app **Theme Access**
-
-No hace falta Node ni Shopify CLI en tu máquina: todo corre en el contenedor.
 
 ## Inicio rápido
 
+El catálogo vive en **PostgreSQL** (contenedor `recutex-db`) y las fotos se descargan a `storage/media` (fuera de Git).
+
+Con Docker (hot reload):
+
 ```bash
-git clone <repo> recutex-storefront && cd recutex-storefront
-cp .env.example .env          # completar SHOPIFY_FLAG_STORE (y opcionalmente el token)
-make build                    # construye la imagen (Node 24 + Shopify CLI + linters)
-make dev                      # inicia shopify theme dev con hot reload
+cp .env.example .env        # y define POSTGRES_PASSWORD / DATABASE_URL con tu propia clave local
+npm install                 # para ejecutar el seed desde tu equipo
+docker compose up -d db     # PostgreSQL en localhost:5433
+npm run db:seed             # carga el catálogo y descarga las fotos (~230 MB, solo la primera vez)
+docker compose up dev
+# http://localhost:3000
 ```
 
-La primera vez sin token, la CLI muestra un **código de verificación** y un link `accounts.shopify.com/activate-with-code...`. Ábrelo en tu navegador, confirma el código y la sesión queda guardada en un volumen Docker.
+Sin Docker para la app (la base sigue en Docker):
 
-Cuando arranca, la CLI imprime:
+```bash
+cp .env.example .env        # y define POSTGRES_PASSWORD / DATABASE_URL con tu propia clave local
+npm install
+docker compose up -d db && npm run db:seed
+npm run dev
+```
 
-- `http://127.0.0.1:9292` → preview local con hot reload (ábrelo como `http://localhost:9292`)
-- link de **preview compartible** (`?preview_theme_id=...`) → para mostrar a otras personas
-- link al **Theme Editor** del development theme
-
-Detener: `Ctrl+C` y luego `make stop`.
-
-Sin `make`: `docker compose run --rm --service-ports dev npm run dev`.
+Detener: `Ctrl+C` y `docker compose down` (los datos quedan en el volumen `pgdata`; `docker compose down -v` los borra).
 
 ## Variables de entorno
 
-| Variable                   | Obligatoria         | Descripción                                                            |
-| -------------------------- | ------------------- | ---------------------------------------------------------------------- |
-| `SHOPIFY_FLAG_STORE`       | sí                  | `recutex.myshopify.com`                                                |
-| `SHOPIFY_CLI_THEME_TOKEN`  | no                  | Contraseña de Theme Access (`shptka_...`). Evita el login interactivo. |
-| `SHOPIFY_STAGING_THEME_ID` | para `push-staging` | ID del theme **no publicado** de QA. Nunca el live.                    |
-| `THEME_DEV_PORT`           | no                  | Puerto del preview (default `9292`).                                   |
+| Variable                                 | Descripción                                                                                                                                    |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`                   | URL pública (canonical, sitemap).                                                                                                              |
+| `WEBPAY_ENV`                             | `integration` (demo, sin cobros) o `production`.                                                                                               |
+| `WEBPAY_COMMERCE_CODE`, `WEBPAY_API_KEY` | Solo producción: credenciales que Transbank entrega a Recutex.                                                                                 |
+| `ALLOW_INDEXING`                         | `true` en producción para permitir indexación (la demo no se indexa).                                                                          |
+| `DATABASE_URL`                           | Conexión a PostgreSQL. En Docker la arma `docker-compose.yml` a partir de `POSTGRES_PASSWORD`.                                                 |
+| `POSTGRES_PASSWORD`                      | Clave del contenedor `db`, obligatoria (usa letras y números para no tener que codificarla en la URL). Se aplica al crear el volumen `pgdata`. |
+| `MEDIA_DIR`                              | Carpeta de fotos servidas en `/media` (por defecto `storage/media`).                                                                           |
 
-`.env` está en `.gitignore`. Nunca commitear tokens. Solo se versiona `.env.example`.
-
-### Obtener una contraseña de Theme Access
-
-1. Admin → Apps → instalar **Theme Access** (app oficial de Shopify).
-2. Crear contraseña para el email del desarrollador.
-3. Copiar el valor `shptka_...` del email recibido a `SHOPIFY_CLI_THEME_TOKEN` en `.env`.
+`.env` y `.env.local` están en `.gitignore` y en `.dockerignore`. Nunca commitear credenciales: `.env.example` solo tiene valores de ejemplo.
 
 ## Comandos
 
-| `make`                     | Qué hace                                                                                               |
-| -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `make dev`                 | `shopify theme dev`: sube el theme a un **development theme** oculto y sincroniza cada cambio guardado |
-| `make check`               | Shopify Theme Check (errores de Liquid, schemas, performance)                                          |
-| `make lint`                | Theme Check + ESLint + Stylelint + Prettier                                                            |
-| `make format`              | Formatea con Prettier (incluye Liquid)                                                                 |
-| `make backup`              | Descarga copia **solo lectura** del theme live a `backups/`                                            |
-| `make themes`              | Lista los themes de la tienda con su rol                                                               |
-| `make push-staging`        | Sube `theme/` al theme de staging (con guardas)                                                        |
-| `make login`               | Login interactivo en Shopify                                                                           |
-| `make shell`               | Shell dentro del contenedor                                                                            |
-| `make stop` / `make clean` | Detiene / borra contenedores y volúmenes (cierra sesión)                                               |
+| Comando                                           | Qué hace                                                                                |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `npm run dev`                                     | Desarrollo con hot reload                                                               |
+| `npm run build` / `npm start`                     | Build y servidor de producción                                                          |
+| `npm run lint`                                    | ESLint + TypeScript                                                                     |
+| `npm run format`                                  | Prettier                                                                                |
+| `npm run check:legacy-urls`                       | Verifica que las URLs de la tienda actual respondan en el sitio nuevo                   |
+| `npm run falabella:snapshot`                      | Importa productos y fotos que Recutex publica en Falabella (`data/falabella-*`)         |
+| `npm run catalog:snapshot`                        | Actualiza `data/catalog.json` desde el catálogo público actual (solo lectura)           |
+| `npm run db:seed`                                 | Crea las tablas, carga el catálogo en PostgreSQL y descarga las fotos a `storage/media` |
+| `docker compose --profile prod up -d --build web` | Imagen de producción local en http://localhost:3100 (contenedor `recutex-web`)          |
 
-## Cómo funciona el hot reload
+## Probar un pago (ambiente de integración)
 
-```text
-editar theme/**  →  guardar  →  bind mount al contenedor  →  shopify theme dev detecta el cambio
-                 →  sube el archivo al development theme  →  el preview se recarga
-```
+1. Agrega un producto y ve a **Finalizar compra**.
+2. Completa los datos y presiona **Pagar con Webpay**: te lleva al formulario de prueba de Transbank.
+3. Tarjeta de prueba: VISA `4051 8856 0044 6623`, CVV `123`, cualquier fecha futura. En la autenticación: RUT `11.111.111-1`, clave `123`.
+4. Vuelves a `/checkout/resultado` con el detalle confirmado por Transbank. También puedes probar **Anular compra y volver**.
 
-La imagen Docker solo contiene herramientas; el código se monta como volumen, así que **nunca hay que reconstruir la imagen por cambios en el theme**. Reconstruir solo al cambiar `Dockerfile` o `package.json`.
+Datos de prueba oficiales: documentación de Transbank Developers.
 
-## Flujo seguro hacia producción
+## Deploy
 
-1. **Nunca** se trabaja sobre el theme publicado.
-2. Antes de empezar: `make backup` (copia local) y además **Admin → Temas → ⋯ → Duplicar** sobre el theme live.
-3. Desarrollo diario: `make dev` (development theme propio, invisible para clientes).
-4. QA: crear en el admin un theme vacío/duplicado **no publicado** llamado `Recutex 2.0 — Staging`, poner su ID en `SHOPIFY_STAGING_THEME_ID`, y `make push-staging`. El script aborta si el ID corresponde al theme live.
-5. Producción: una persona responsable revisa staging y lo publica desde el admin (**Temas → Publicar**). No hay comando para esto a propósito.
+- **Vercel**: importar el repo, definir las variables de entorno. `NEXT_PUBLIC_SITE_URL` debe ser el dominio final.
+- **VPS / cualquier servidor con Docker**: `docker build --target runner -t recutex .` y `docker run -p 3000:3000 --env-file .env recutex`.
 
-> `push-staging` sobrescribe `config/settings_data.json` y los templates JSON del theme de staging. Si alguien configuró contenido en el editor de staging, hacer `shopify theme pull --theme <id>` antes de volver a subir.
-
-## Estructura
-
-```text
-.
-├── Dockerfile, docker-compose.yml, Makefile, .env.example
-├── package.json           scripts y linters
-├── scripts/               backup-live.mjs, push-staging.mjs
-├── docs/                  auditoría y arquitectura
-└── theme/                 raíz del theme Shopify
-    ├── assets/  config/  layout/  locales/
-    └── sections/  snippets/  templates/
-```
+Plan completo de lanzamiento, redirecciones y vuelta atrás: `docs/LAUNCH.md`.
 
 ## Git workflow
 
-- `main`: estable, lo que está (o estará) en producción.
-- `develop`: integración.
-- `feature/<nombre>`: una por fase/componente (`feature/header`, `feature/home`, `feature/product-card`, `feature/product-page`, `feature/cart`, `feature/search`, `feature/animations`).
+- `main`: estable. `develop`: integración. `feature/<nombre>`: una por funcionalidad.
+- Commits: Conventional Commits (`feat:`, `fix:`, `perf:`, `docs:`, `chore:`).
+- El prototipo anterior como theme de Shopify queda en el tag `shopify-theme-v0`.
 
-```bash
-git switch develop
-git switch -c feature/header
-# ...trabajo + make lint...
-git commit -m "feat: add premium sticky header"
-# PR feature/header → develop; release: develop → main
-```
+## Reglas del proyecto
 
-Commits en formato Conventional Commits: `feat:`, `fix:`, `perf:`, `refactor:`, `docs:`, `chore:`.
-
-## Reglas del theme
-
-- No hardcodear productos, precios, descuentos, stock, garantías, cuotas ni reviews: todo viene de Shopify.
-- Todo contenido comercial (banners, textos, links, colecciones) debe ser editable en el Theme Editor.
-- JS en ES modules / Custom Elements, sin jQuery ni librerías pesadas.
-- CSS mobile first con los tokens de `base.css` / `css-variables.liquid`; evitar `!important`.
-- Respetar `prefers-reduced-motion`.
+- Ningún precio, descuento, stock, garantía o plazo inventado: todo viene del catálogo o de textos publicados por Recutex (`src/content/site.ts`).
+- El monto a pagar siempre se calcula en el servidor.
+- Accesibilidad: navegación por teclado, foco visible, `prefers-reduced-motion`, contraste AA.
+- Performance: Server Components por defecto, imágenes con tamaño correcto, sin librerías pesadas.
 
 ## Troubleshooting
 
-| Síntoma                                                                  | Causa / solución                                                                                                               |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `spawn xdg-open ENOENT`                                                  | Imagen antigua. `make build` (la imagen actual incluye un shim).                                                               |
-| La CLI pide login cada vez                                               | Se borró el volumen `shopify-config` (`make clean`). Volver a hacer login o usar Theme Access.                                 |
-| El preview no refleja cambios                                            | Revisar que el archivo esté dentro de `theme/` y que `make dev` siga corriendo; ver errores de subida en la consola de la CLI. |
-| Puerto 9292 ocupado                                                      | Cambiar `THEME_DEV_PORT` en `.env`.                                                                                            |
-| `You are not authorized to use the CLI to develop in the provided store` | La cuenta no tiene permiso de Themes, o `SHOPIFY_FLAG_STORE` no es el dominio `.myshopify.com`.                                |
-| Theme Check falla                                                        | `make check` muestra archivo y línea; corregir antes de commitear.                                                             |
-| En Apple Silicon el build es lento la primera vez                        | Normal: descarga la imagen base arm64; las siguientes usan caché.                                                              |
+| Síntoma                          | Solución                                                                                                   |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Cambios no se ven en Docker      | `WATCHPACK_POLLING` ya está activo; reinicia con `docker compose restart dev`.                             |
+| "No pudimos conectar con Webpay" | Revisa conexión a internet y `WEBPAY_ENV`. En producción, que código de comercio y API key sean correctos. |
+| Puerto ocupado                   | Cambia el puerto en `docker-compose.yml` o usa `npm run dev -- -p 3005`.                                   |
+| Imágenes no cargan               | Vienen del CDN de la tienda actual; si esa URL cambia, correr `npm run catalog:snapshot`.                  |
